@@ -3,6 +3,9 @@ $(document).ready(function() {
     $('#open_filter_button').click(function() {
         $('.filters').toggleClass('filters_active');
     });
+    $('#btn_filter').click(function() {
+        $('.filters').toggleClass('filters_active');
+    });
 });
 $(document).on('keyup', function(e) {
     if (e.keyCode == 27) {
