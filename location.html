@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+
+    <script src="js/location.js"></script>
+    <script src="js/popup_windows.js"></script>
+
+    <!---->
+    <link rel="stylesheet" href="css/style_hed_foot_main.css" />
+    <link rel="stylesheet" href="css/style_location_1.css" />
+    <link rel="stylesheet" href="css/adaptability/style_media_site.css" />
+    <link rel="stylesheet" href="css/adaptability/style_media_location.css" />
+
+    <title>Праздник для вас!</title>
+</head>
+
+<body id="body">
+    <!--фон паролакса-->
+    <div class="bg_1" id="parolacs_bg"></div>
+    <!---->
+    <header class="header_pc">
+        <a href="index.html" class="header-logo">
+            <img src="img/for_logo/logo.png" alt="Логотип " />
+        </a>
+        <!---->
+        <div class="line_2level_header desctop_line_header"></div>
+        <!---->
+        <nav class="nav_header desctop_nav_header">
+
+            <!---->
+            <li class="news_li li_1_level">
+                <a href="index.html" class="li_1_level_a">Главная</a>
+            </li>
+
+            <li class="contacts_li li_1_level">
+                <p href="location.html" class="activ_nav_section">Выбор зоны</p>
+            </li>
+
+            <li class="contacts_li li_1_level">
+                <a href="booking.html" class="li_1_level_a">Бронирование</a>
+            </li>
+            <li class="info_li li_1_level">
+                <a href="action.html" class="li_1_level_a">Акции</a>
+            </li>
+        </nav>
+        <a href="#" class="user-navigation">
+            <div class="login-link desctop_login-link">
+                Личный <br> кабинет
+            </div>
+            <div class="login-link mobile_login-link">
+                ВХОД
+            </div>
+        </a>
+        <!--mobile запчасти хедера-->
+        <!--burger-->
+        <!--burger-->
+        <div class="btn_burger_header_wrapper">
+            <a class="btn_burger_1" id="btn_burger_1">
+                <div class="center_line_burger_1"></div>
+            </a>
+        </div>
+        <!--nav-mobile-->
+        <div class="activation_mobile_nav_header">
+            <div class="mobile_nav_header_wrapper">
+                <div class="line_2level_header mobile_line_header"></div>
+                <nav class="nav_header mobile_nav_header">
+
+                    <li class="news_li li_1_level">
+                        <a href="index.html" class="li_1_level_a">Главная</a>
+                    </li>
+
+                    <li class="contacts_li li_1_level">
+                        <p href="location.html" class="activ_nav_section">Выбор зоны</p>
+                    </li>
+
+                    <li class="contacts_li li_1_level">
+                        <a href="booking.html" class="li_1_level_a">Бронирование</a>
+                    </li>
+                    <li class="info_li li_1_level">
+                        <a href="action.html" class="li_1_level_a">Акции</a>
+                    </li>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    </header>
+
+    <main class="main">
+        <section class="location_wrapper_section">
+            <!--Слайдер-->
+            <section class="slider_info_company_wrapper">
+                <div class="bg_info_company">
+                    <div class="slider_info_company">
+                        <img src="img/logo_text_2.png" alt="logo_text" class="logo_text_img" />
+                        <p class="slog_1_info_company">«Праздник в каждый дом» </p>
+                        <p class="slog_2_info_company">Подарим волшебство <br> для Ваших детей!</p>
+                        <!--РАЗДЕЛИТЕЛЬ-->
+                        <div class="line_cut_1"></div>
+                        <!---->
+                    </div>
+                </div>
+                <div class="fader_wrapper">
+                    <img class="img" src="img/people/2.jpg" alt="2" />
+                </div>
+            </section>
+
+            <!---->
+
+
+        </section>
+        <!---->
+
+        <section class="filter_location_wrapper">
+            <h1>Локации</h1>
+            <!--кнопка открытия фильтра-->
+            <button class=" open_filter_button" id="open_filter_button">Фильтр</button>
+            <!---->
+            <!--САЙДБАР-->
+            <div class="filters">
+                <h3 class="filters_text_esc">ESC свернуть окно</h3>
+                <form action="#" method="get" class="filter-form">
+                    <fieldset class="filter-brand">
+                        <legend>Количество людей:</legend>
+                        <ul id="filter_ul">
+                            <li class="filter-option">
+                                <input data-toggle="group_1" type="checkbox" class="visually-hidden filter-input filter-input-checkbox filter-close" name="group_1" id="group_1_check" />
+                                <!--ЕСЛИ МЫ ПРОПИШЕМ ПУНКТУ disabled(отключим) стили на отключенный элемент прописаны-->
+                                <label for="group_1_check" class="filter-checkbox">
+                    <!--дале с помощью спана создаем индикатор чекбокса с крестиком чтобы потом скрыть стандартные галочки-->
+                    <span class="checkbox-indicator"></span>
+                    <!---->
+                    до 10 человек
+                  </label>
+                            </li>
+                            <li class="filter-option">
+                                <input data-toggle="group_2" type="checkbox" class="visually-hidden filter-input filter-input-checkbox filter-close" name="group_2" id="group_2_check" /><label for="group_2_check" class="filter-checkbox">
+                    <span class="checkbox-indicator"></span>
+                    до 20 человек</label
+                  >
+                </li>
+                <li class="filter-option">
+                  <input
+                    data-toggle="group_3"
+                    type="checkbox"
+                    class="visually-hidden filter-input filter-input-checkbox filter-close"
+                    name="group_3"
+                    id="group_3_check"
+                  />
+                  <label for="group_3_check" class="filter-checkbox">
+                    <span class="checkbox-indicator"></span>
+                    до 30 человек</label
+                  >
+                </li>
+                <li class="filter-option">
+                  <input
+                    data-toggle="group_4"
+                    type="checkbox"
+                    class="visually-hidden filter-input filter-input-checkbox filter-close"
+                    name="group_4"
+                    id="group_4_check"
+                  />
+                  <label for="group_4_check" class="filter-checkbox">
+                    <span class="checkbox-indicator"></span>
+                    до 50 человек</label
+                  >
+                </li>
+
+                <li class="filter-option filter-option-all">
+                  <input
+                    checked
+                    data-toggle="group_all"
+                    type="checkbox"
+                    class="visually-hidden filter-input filter-input-checkbox"
+                    name="group_all"
+                    id="group_all_check"
+                  /><label for="group_all_check" class="filter-checkbox">
+                    <span class="checkbox-indicator"></span>
+                    Показать все</label
+                  >
+                </li>
+              </ul>
+            </fieldset>
+
+            <button class="filter-button button" id="btn_filter" type="button">
+              Показать
+            </button>
+          </form>
+        </div>
+        <!--Список зон-->
+
+        <!--Зоны делятся на несколько групп по количеству людей 
+            group_1=до 10 человек,
+            group_2=до 20 человек,
+            group_3=до 30 человек,
+            group_4=до 50 человек,
+    -->
+  <!--якоря-->
+<div class="anchor_wrapper"></div>
+  <a class="anchor" id="anchor_10"></a>
+  <a class="anchor" id="anchor_20"></a>
+  <a class="anchor" id="anchor_30"></a>
+  <a class="anchor" id="anchor_50"></a>
+  <a class="anchor" id="anchor_all"></a>
+
+  <!---->
+        <!---->
+
+        <div class="location_list_wrapper">
+          <!---->
+          <!---->
+          <!---->
+          <!---->
+
+          <!--1-->
+          <div class="location_card_in_list group_4 group_all">
+            <img src="img/location/25.jpg" alt="photo" />
+            <div class="location_info location_info_1">
+              <h2>Шатер</h2>
+              <h3>Место 1</h3>
+              <p>Вместимость: до 50 человек</p>
+              <p>Количество: 1шт.</p>
+              <p class="location_info_text">Краткое описание зоны</p>
+              <p>Стоимость: <br> 7000 р/сутки</p>
+            </div>
+            <div class="btn_wrapper_location">
+              <a
+                class="btn_hover btn_card_location btn_card_location_1 btn_card_booking "
+                href="booking.html#booking_s1"
+                >Бронь</a
+              >
+              <button
+                type="button"
+                class="btn_hover btn_card_location btn_card_info_1"
+              >
+                подробнее
+              </button>
+            </div>
+          </div>
+          <!---->
+          <!--2-->
+          <div class="location_card_in_list group_1 group_all">
+            <img src="img/location/6.jpg" alt="photo" />
+            <div class="location_info location_info_2">
+              <h2>«Черная Жемчужина»</h2>
+              <p>(Бассейн с зоной отдыха и летним домиком)</p>
+              <h3>Место 2</h3>
+              <p>Вместимость: до 10 человек</p>
+              <p>Количество: 1шт.</p>
+              <p class="location_info_text">Краткое описание зоны</p>
+              <p>Стоимость:<br> 20000 р/сутки</p>
+            </div>
+            <div class="btn_wrapper_location">
+              <a
+                class="btn_hover btn_card_location btn_card_location_2 btn_card_booking "
+                href="booking.html#booking_s2"
+                >Бронь</a
+              >
+              <button
+                type="button"
+                class="btn_hover btn_card_location btn_card_info_2"
+              >
+                подробнее
+              </button>
+            </div>
+          </div>
+          <!---->
+          <!--3-->
+          <div class="location_card_in_list group_2 group_all">
+            <img src="img/location/27.jpg" alt="photo" />
+            <div class="location_info location_info_3">
+              <h2>Беседка<br /> «У Лукоморья»</h2>
+              <h3>Место 3</h3>
+              <p>Вместимость: до 20 человек</p>
+              <p>Количество: 2шт.</p>
+              <p class="location_info_text">Краткое описание зоны</p>
+              <p>Стоимость:<br> 2000 р/сутки</p>
+            </div>
+            <div class="btn_wrapper_location">
+              <a
+                class="btn_hover btn_card_location btn_card_location_3 btn_card_booking "
+                href="booking.html#booking_s3"
+                >Бронь</a
+              >
+              <button
+                type="button"
+                class="btn_hover btn_card_location btn_card_info_3"
+              >
+                подробнее
+              </button>
+            </div>
+          </div>
+
+          <!---->
+          <!--4-->
+          <div class="location_card_in_list group_1 group_all">
+            <img src="img/location/7.jpg" alt="photo" />
+            <div class="location_info location_info_4">
+              <h2>Беседка<br /> «Ротонда»</h2>
+              <h3>Место 4</h3>
+              <p>Вместимость: до 10 человек</p>
+              <p>Количество: 10шт.</p>
+              <p class="location_info_text">Краткое описание зоны</p>
+              <p>Стоимость:<br> 1500 р/сутки</p>
+            </div>
+            <div class="btn_wrapper_location">
+              <a
+                class="btn_hover btn_card_location btn_card_location_4 btn_card_booking "
+                href="booking.html#booking_s4"
+                >Бронь</a
+              >
+              <button
+                type="button"
+                class="btn_hover btn_card_location btn_card_info_4"
+              >
+                подробнее
+              </button>
+            </div>
+          </div>
+
+          <!---->
+          <!--5-->
+          <div class="location_card_in_list group_2 group_all">
+            <img src="img/location/18.jpg" alt="photo" />
+            <div class="location_info location_info_5">
+              <h2>VIP зал<br /> «На балу»</h2>
+              <p>Банкетный зал с танцполом</p>
+              <h3>Место 5</h3>
+              <p>Вместимость: до 20 человек</p>
+              <p>Количество: 4шт.</p>
+              <p class="location_info_text">Краткое описание зоны</p>
+              <p>Стоимость:<br> 10000 р/сутки</p>
+            </div>
+
+            <div class="btn_wrapper_location">
+              <a
+                class="btn_hover btn_card_location btn_card_location_5 btn_card_booking "
+                href="booking.html#booking_s5"
+                >Бронь</a
+              >
+              <button
+                type="button"
+                class="btn_hover btn_card_location btn_card_info_5"
+              >
+                подробнее
+              </button>
+            </div>
+          </div>
+
+          <!---->
+          <!--6-->
+          <div class="location_card_in_list group_3 group_all">
+            <img src="img/location/8.jpg" alt="photo" />
+            <div class="location_info location_info_6">
+              <h2>«Кроличья нора»</h2>
+              <h3>Место 6</h3>
+              <p>Вместимость: до 30 человек</p>
+              <p>Количество: 2шт.</p>
+              <p class="location_info_text">Краткое описание зоны</p>
+              <p>Стоимость:<br> 15000 р/сутки</p>
+            </div>
+            <div class="btn_wrapper_location">
+              <a
+                class="btn_hover btn_card_location btn_card_location_6 btn_card_booking "
+                href="booking.html#booking_s6"
+                >Бронь</a
+              >
+              <button
+                type="button"
+                class="btn_hover btn_card_location btn_card_info_6"
+              >
+                подробнее
+              </button>
+            </div>
+          </div>
+          <!---->
+          <!--7-->
+          <div class="location_card_in_list group_4 group_all">
+            <img src="img/location/2.jpg" alt="photo" />
+            <div class="location_info location_info_7">
+              <h2>
+                Спортивная площадка <br />
+                «Поляна сказок»
+              </h2>
+              <h3>Место 7</h3>
+              <p>Вместимость: до 50 человек</p>
+              <p>Количество: 1шт.</p>
+              <p class="location_info_text">Краткое описание зоны</p>
+              <p>Стоимость:<br> 15000 р/сутки</p>
+            </div>
+            <div class="btn_wrapper_location">
+              <a
+                class="btn_hover btn_card_location btn_card_location_7 btn_card_booking "
+                href="booking.html#booking_s7"
+                >Бронь</a
+              >
+              <button
+                type="button"
+                class="btn_hover btn_card_location btn_card_info_7"
+              >
+                подробнее
+              </button>
+            </div>
+          </div>
+          <!---->
+          <!--8-->
+          <div class="location_card_in_list group_3 group_all">
+            <img src="img/location/9.jpg" alt="photo" />
+            <div class="location_info location_info_8">
+              <h2>«На лесной опушке»</h2>
+              <h3>Место 8</h3>
+              <p>Вместимость: до 30 человек</p>
+              <p>Количество: 4шт.</p>
+              <p class="location_info_text">Краткое описание зоны</p>
+              <p>Стоимость:<br> 10000 р/сутки</p>
+            </div>
+            <div class="btn_wrapper_location">
+              <a
+                class="btn_hover btn_card_location btn_card_booking btn_card_location_8"
+                href="booking.html#booking_s8"
+                >Бронь</a
+              >
+              <button
+                type="button"
+                class="btn_hover btn_card_location btn_card_info_8"
+              >
+                подробнее
+              </button>
+            </div>
+          </div>
+          <!---->
+        </div>
+      </section>
+      <!---->
+
+      <!---->
+
+      <section class="map_wrapper">
+        <h2 class="map_wrapper_h2">КАРТА КОМПЛЕКСА</h2>
+        <div class="map_location"></div>
+
+        <!--Ставим метки на карте-->
+
+        <!--1-->
+        <div>
+          <div class="location_mark location_1">
+            <h4 class="zone zone_4">место 1</h4>
+            <div class="local_icon"></div>
+            <div class="mini_logo_location mini_logo_location_1"></div>
+          </div>
+
+          <!--КАРТОЧКИ ЛОКАЦИЙ----1---->
+          <section class="card_wrapper card_wrapper_1">
+            <div class="location_card">
+              <img src="img/location/25.jpg" alt="фото" />
+              <h2>Шатер</h2>
+              <p>
+                здесь должно быть описание локации
+                <br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+              </p>
+              <a class="btn_card btn_hover" href="booking.html#booking_s1"
+                >Перейти к бронированию</a
+              >
+              <button class="btn-close">x</button>
+            </div>
+            <p class="text_esc">Нажмите ESC чтобы закрыть окно</p>
+          </section>
+        </div>
+
+        <!--2-->
+        <div>
+          <div class="location_mark location_2">
+            <h4 class="zone zone_1">место 2</h4>
+            <div class="local_icon"></div>
+            <div class="mini_logo_location mini_logo_location_2"></div>
+          </div>
+          <!--КАРТОЧКИ ЛОКАЦИЙ----2---->
+          <section class="card_wrapper card_wrapper_2">
+            <div class="location_card">
+              <img src="img/location/6.jpg" alt="фото" />
+              <h2>
+               
+                «Черная Жемчужина»
+              </h2>
+              <h3>Бассейн с зоной отдыха и летним домиком </h3>
+
+              <p>
+                здесь должно быть описание локации
+                <br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+              </p>
+              <a class="btn_card btn_hover" href="booking.html#booking_s2"
+                >Перейти к бронированию</a
+              >
+              <button class="btn-close">x</button>
+            </div>
+            <p class="text_esc">Нажмите ESC чтобы закрыть окно</p>
+          </section>
+        </div>
+        <!--3-->
+        <div>
+          <div class="location_mark location_3">
+            <h4 class="zone zone_2">место 3</h4>
+            <div class="local_icon"></div>
+            <div class="mini_logo_location mini_logo_location_3"></div>
+          </div>
+          <!--КАРТОЧКИ ЛОКАЦИЙ----3---->
+          <section class="card_wrapper card_wrapper_3">
+            <div class="location_card">
+              <img src="img/location/27.jpg" alt="фото" />
+              <h2>Беседка <br> «У Лукоморья»</h2>
+              <p>
+                здесь должно быть описание локации
+                <br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+              </p>
+              <a class="btn_card btn_hover" href="booking.html#booking_s3"
+                >Перейти к бронированию</a
+              >
+              <button class="btn-close">x</button>
+            </div>
+            <p class="text_esc">Нажмите ESC чтобы закрыть окно</p>
+          </section>
+        </div>
+        <!--4-->
+        <div>
+          <div class="location_mark location_4">
+            <h4 class="zone zone_1">место 4</h4>
+            <div class="local_icon"></div>
+            <div class="mini_logo_location mini_logo_location_4"></div>
+          </div>
+          <!--КАРТОЧКИ ЛОКАЦИЙ----4---->
+          <section class="card_wrapper card_wrapper_4">
+            <div class="location_card">
+              <img src="img/location/7.jpg" alt="фото" />
+              <h2>Беседка <br> «Ротонда»</h2>
+              <p>
+                здесь должно быть описание локации
+                <br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+              </p>
+              <a class="btn_card btn_hover" href="booking.html#booking_s4"
+                >Перейти к бронированию</a
+              >
+              <button class="btn-close">x</button>
+            </div>
+            <p class="text_esc">Нажмите ESC чтобы закрыть окно</p>
+          </section>
+        </div>
+        <!--5-->
+        <div>
+          <div class="location_mark location_5">
+            <h4 class="zone zone_2">место 5</h4>
+            <div class="local_icon"></div>
+            <div class="mini_logo_location mini_logo_location_5"></div>
+          </div>
+          <!--КАРТОЧКИ ЛОКАЦИЙ----5---->
+          <section class="card_wrapper card_wrapper_5">
+            <div class="location_card">
+              <img src="img/location/18.jpg" alt="фото" />
+              <h2>VIP зал <br> «На балу»</h2>
+              <p>
+                здесь должно быть описание локации
+                <br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+              </p>
+              <a class="btn_card btn_hover" href="booking.html#booking_s5"
+                >Перейти к бронированию</a
+              >
+              <button class="btn-close">x</button>
+            </div>
+            <p class="text_esc">Нажмите ESC чтобы закрыть окно</p>
+          </section>
+        </div>
+        <!--6-->
+        <div>
+          <div class="location_mark location_6">
+            <h4 class="zone zone_3">место 6</h4>
+            <div class="local_icon"></div>
+            <div class="mini_logo_location mini_logo_location_6"></div>
+          </div>
+          <!--КАРТОЧКИ ЛОКАЦИЙ----6---->
+          <section class="card_wrapper card_wrapper_6">
+            <div class="location_card">
+              <img src="img/location/8.jpg" alt="фото" />
+              <h2>«Кроличья нора»</h2>
+              <p>
+                здесь должно быть описание локации
+                <br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+              </p>
+              <a class="btn_card btn_hover" href="booking.html#booking_s6"
+                >Перейти к бронированию</a
+              >
+              <button class="btn-close">x</button>
+            </div>
+            <p class="text_esc">Нажмите ESC чтобы закрыть окно</p>
+          </section>
+        </div>
+        <!--7-->
+        <div>
+          <div class="location_mark location_7">
+            <h4 class="zone zone_4">место 7</h4>
+            <div class="local_icon"></div>
+            <div class="mini_logo_location mini_logo_location_7"></div>
+          </div>
+          <!--КАРТОЧКИ ЛОКАЦИЙ----7---->
+          <section class="card_wrapper card_wrapper_7">
+            <div class="location_card">
+              <img src="img/location/2.jpg" alt="фото" />
+              <h2>Спортивная площадка <br> «Поляна сказок»</h2>
+              <p>
+                здесь должно быть описание локации
+                <br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+              </p>
+              <a class="btn_card btn_hover" href="booking.html#booking_s7"
+                >Перейти к бронированию</a
+              >
+              <button class="btn-close">x</button>
+            </div>
+            <p class="text_esc">Нажмите ESC чтобы закрыть окно</p>
+          </section>
+        </div>
+        <!--8-->
+        <div>
+          <div class="location_mark location_8">
+            <h4 class="zone zone_3">место 8</h4>
+            <div class="local_icon"></div>
+            <div class="mini_logo_location mini_logo_location_8"></div>
+          </div>
+          <!--КАРТОЧКИ ЛОКАЦИЙ----8---->
+          <section class="card_wrapper card_wrapper_8">
+            <div class="location_card">
+              <img src="img/location/9.jpg" alt="фото" />
+              <h2>«На лесной опушке»</h2>
+              <p>
+                здесь должно быть описание локации
+                <br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+                текст текст текст текст текст<br />
+              </p>
+              <a class="btn_card btn_hover" href="booking.html#booking_s8"
+                >Перейти к бронированию</a
+              >
+              <button class="btn-close">x</button>
+            </div>
+            <p class="text_esc">Нажмите ESC чтобы закрыть окно</p>
+          </section>
+        </div>
+      </section>
+    </main>
+    <!--footer-->
+    <footer class="footer_wrapper desctop_footer">
+      <div class="footer_info">
+        <h2>МЕНЮ</h2>
+
+        <a href="index.html">главная</a>
+        <p class="active_menu">Локации</p>
+        <a href="booking.html"> Бронирование</a>
+        <a href="action.html">Акции</a>
+        <a>Авторизация</a>
+        <a class="contacts_href">Контакты</a>
+        <a class="feedback_href">Обратная связь</a>
+      </div>
+      <div class="footer_logo_wrapper">
+        <img class="footer_logo" src="img/for_logo/logo.png" alt="Логотип " />
+        <a href="https://vk.com/vbv252" target="_blank" class="copyright_mobile"
+          >Copyright © 2022 ih_vbv25</a
+        >
+      </div>
+      <div class="footer_info">
+        <h2>Контакты</h2>
+
+        <p>Телефон</p>
+        <p>8 (800) 111-20-20</p>
+        <p>Адрес</p>
+        <p>Москва, 45 улица, строение 25</p>
+
+        <div class="icon_footer_wrapper">
+          <a href="#"
+            ><img class="icon_footer" src="img/facebook-f.svg" alt=""
+          /></a>
+          <a href="#"
+            ><img class="icon_footer" src="img/instagram.svg" alt=""
+          /></a>
+          <a href="#"
+            ><img class="icon_footer" src="img/twitter.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+<!---->
+    <!---->
+    <!--footer--mobile-->
+    <footer class="footer_mobile">
+      <!--LOGO-->
+      <div class="footer_logo_wrapper_mobile">
+          <img class="footer_logo_mobile" src="img/for_logo/logo.png" alt="Логотип " />
+      </div>
+      <!---->
+      <!--навигция-->
+      <h2 class="menu_h2_footer_mobile">МЕНЮ</h2>
+
+      <div class="group_footer_nav group_footer_nav_1">
+          <a   class="footer_nav_mobile_a" href="index.html">Главная</a>
+          <p class="active_menu" >Локации</p>
+      </div>
+      <div class="group_footer_nav group_footer_nav_2">
+          <a class="footer_nav_mobile_a" href="booking.html"> Бронь</a>
+          <a class="footer_nav_mobile_a" href="action.html">Акции</a></div>
+      <div class="group_footer_nav group_footer_nav_3">
+          <a class="footer_nav_mobile_a ">Авторизация</a>
+          <a class="footer_nav_mobile_a contacts_href">Контакты</a>
+          <a class="footer_nav_mobile_a feedback_href">Обратная связь</a></div>
+      <!-- <div class="footer_nav_mobile">
+      </div>
+      -->
+
+      <!--СОЦСЕТИ-->
+      <div class="icon_footer_wrapper_mobile
+      icon_footer_wrapper_mobile_1">
+          <a href="#"><img class="icon_footer" src="img/facebook-f.svg" alt="" /></a>
+      </div>
+      <div class="icon_footer_wrapper_mobile icon_footer_wrapper_mobile_2">
+          <a href="#"><img class="icon_footer" src="img/instagram.svg" alt="" /></a>
+      </div>
+      <div class="icon_footer_wrapper_mobile icon_footer_wrapper_mobile_3">
+          <a href="#"><img class="icon_footer" src="img/twitter.svg" alt="" /></a>
+      </div>
+      <!---->
+
+      <!--contact-->
+
+
+
+      <p class="contats_footer_mobile contats_footer_mobile_1">Телефон: <br> 8 (800) 111-20-20</p>
+      <p class="contats_footer_mobile contats_footer_mobile_2">Адрес: <br />Москва, 45 улица,<br /> строение 25</p>
+      <!-- <div class="footer_info_mobile">
+      </div>
+      -->
+
+      <!--copyright-->
+      <a href="https://vk.com/vbv252" target="_blank" class="copyright_mobile">Copyright © 2022 ih_vbv25</a
+>
+<!--target="_blank" открывает ссылку в новой вкладке-->
+<!---->
+</footer>
+  <!---->
+<!---->
+
+    <!--кнопк прокрутки-->
+    <div id="back-top">
+      <a href="#top">
+        <div class="up_btn"></div>
+      </a>
+    </div>
+
+    <!--БЛОК КОНТАКТЫ-->
+    <section class="contacts_wrapper">
+      <div class="contacts">
+        <div class="btn_close_contacts" id="btn_close_contacts"></div>
+        <h2 class="contacts_h2">Наши контакты</h2>
+        <div class="adress_contacts">
+          <h3>Адрес</h3>
+          <p>
+            г.Москва <br />
+            45 улица <br />строение 25
+          </p>
+        </div>
+        <div class="index_contacts">
+          <h3>Индекс</h3>
+          <p>394000</p>
+        </div>
+        <div class="phone_contacts">
+          <h3>Телефон</h3>
+          <p>8 (800) 111-20-20</p>
+        </div>
+        <div class="email_contacts">
+          <h3>Электронная почта</h3>
+          <p>admin@admin.ru</p>
+        </div>
+        <div class="contacts_map">
+          <div class="map"  style="position: relative; overflow: hidden">
+            <a
+              href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+              style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+              >Москва</a
+            ><a
+              href="https://yandex.ru/maps/213/moscow/?ll=37.552755%2C55.752913&mode=whatshere&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=37.551556%2C55.754593&whatshere%5Bzoom%5D=17&z=15.99"
+              style="
+                color: #eee;
+                font-size: 12px;
+                position: absolute;
+                top: 14px;
+              "
+              >55.754593,37.551556 — Яндекс Карты</a
+            ><iframe
+              src="https://yandex.ru/map-widget/v1/-/CCUVFRDR9D"
+              width="560"
+              height="400"
+              frameborder="1"
+              allowfullscreen="true"
+              style="position: relative"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--БЛОК ОБРАТНЫЙ ЗВОНОК-->
+    <section class="feedback_wrapper">
+      <div class="feedback">
+        <div class="btn_close_contacts" id="btn_close_Feedback"></div>
+        <h2 class="feedback_h2">Обратная связь</h2>
+        <form class="feedback_form">
+          <label for="feedback_name">Имя </label>
+                                <input type="text" name="feedback_name" id="feedback_name" placeholder="Константин" required />
+                                <div class="message_fail_feedback message_fail_name_feedback"></div>
+                                <label for="feedback_phone">Телефон </label>
+                                <input type="tel" name="feedback_phone" id="feedback_phone" placeholder="+7(999)999-99-99" required />
+                                <div class="message_fail_feedback message_fail_phone_feedback"></div>
+                                <label for="feedback_email">Email </label>
+                                <input type="email" name="feedback_email" id="feedback_email" placeholder="email@mail.ru" required />
+                                <div class="message_fail_feedback message_fail_email_feedback"></div>
+                                <label for="feedback_comments">Сообщение</label>
+                                <textarea name="feedback_comments" id="feedback_comments" maxlength="500"></textarea>
+
+                                <button type="button" id="btn_feedback_order">Отправить</button>
+                                <div class="message_fail_feedback message_form_feedback"></div>
+                </form>
+            </div>
+        </section>
+</body>
+
+</html>
