@@ -1,0 +1,679 @@
+/*----фон для паролакса---*/
+
+.bg_1,
+.bg_2,
+.bg_4 {
+    z-index: -20;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bg_1 {
+    background-image: url('../img/location/15.jpg');
+}
+
+.bg_2 {
+    background-image: url('../img/location/2.jpg');
+}
+
+.bg_4 {
+    background-image: url('../img/location/17.jpg');
+}
+
+p {
+    margin: 0;
+}
+
+
+/*----------------------------*/
+
+
+/*---блок контент---*/
+
+
+/*--автоматическая смена картинок---*/
+
+
+/*обертка блока слайдера*/
+
+.slider_info_company_wrapper {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: block;
+}
+
+
+/*затемнение слайдера и текст на нем*/
+
+.bg_info_company {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.slider_info_company {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 30vh;
+}
+
+.logo_text_img {
+    position: relative;
+    display: block;
+    width: 50vw;
+    height: 20vh;
+    top: -25vh;
+    margin-bottom: 2vh;
+}
+
+.slider_info_company p {
+    display: block;
+    margin-top: 2vh;
+    font-family: inherit;
+    font-size: 3vw;
+    line-height: 8vh;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: -0 -3px 3px rgba(0, 0, 0, 0.32), 0 -3px 3px rgba(0, 0, 0, 0.32), -0 3px 3px rgba(0, 0, 0, 0.32), 0 3px 3px rgba(0, 0, 0, 0.32), -3px -0 3px rgba(0, 0, 0, 0.32), 3px -0 3px rgba(0, 0, 0, 0.32), -3px 0 3px rgba(0, 0, 0, 0.32), 3px 0 3px rgba(0, 0, 0, 0.32), -1px -3px 3px rgba(0, 0, 0, 0.32), 1px -3px 3px rgba(0, 0, 0, 0.32), -1px 3px 3px rgba(0, 0, 0, 0.32), 1px 3px 3px rgba(0, 0, 0, 0.32), -3px -1px 3px rgba(0, 0, 0, 0.32), 3px -1px 3px rgba(0, 0, 0, 0.32), -3px 1px 3px rgba(0, 0, 0, 0.32), 3px 1px 3px rgba(0, 0, 0, 0.32), -2px -3px 3px rgba(0, 0, 0, 0.32), 2px -3px 3px rgba(0, 0, 0, 0.32), -2px 3px 3px rgba(0, 0, 0, 0.32), 2px 3px 3px rgba(0, 0, 0, 0.32), -3px -2px 3px rgba(0, 0, 0, 0.32), 3px -2px 3px rgba(0, 0, 0, 0.32), -3px 2px 3px rgba(0, 0, 0, 0.32), 3px 2px 3px rgba(0, 0, 0, 0.32), -3px -3px 3px rgba(0, 0, 0, 0.32), 3px -3px 3px rgba(0, 0, 0, 0.32), -3px 3px 3px rgba(0, 0, 0, 0.32), 3px 3px 3px rgba(0, 0, 0, 0.32), -3px -3px 3px rgba(0, 0, 0, 0.32), 3px -3px 3px rgba(0, 0, 0, 0.32), -3px 3px 3px rgba(0, 0, 0, 0.32), 3px 3px 3px rgba(0, 0, 0, 0.32);
+}
+
+
+/*слайдер*/
+
+.fader_wrapper {
+    display: block;
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+
+.img {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*--------*/
+
+
+/*---разделитель--1---*/
+
+.line_cut_1,
+.line_cut_2 {
+    z-index: 10;
+    display: block;
+    width: 100%;
+    height: 12vh;
+    opacity: 1;
+    justify-items: center;
+    position: relative;
+    background-image: url('../img/line_cut_2_png.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.line_cut_1 {
+    bottom: -5px;
+}
+
+.line_cut_2 {
+    top: 85.5vh;
+}
+
+.line_cut_1 img,
+.line_cut_2 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: -4.5vh;
+}
+
+
+/*----*/
+
+
+/* блок приемущества*/
+
+.features {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10vh 2vw 10vh;
+}
+
+.features-list {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.features-item {
+    width: 30%;
+    text-align: center;
+    padding: 1vh 1vw;
+}
+
+.features-item a {
+    cursor: pointer;
+}
+
+.img_features {
+    display: block;
+    width: 10vw;
+    height: 10vw;
+    margin: auto;
+    margin-bottom: 2vh;
+}
+
+.features-item h3 {
+    margin: 0;
+    margin-bottom: 6vh;
+    font-size: 4vw;
+    line-height: 5vh;
+}
+
+.features-item p {
+    margin: 0 2vw 1vh;
+    line-height: 4vh;
+}
+
+.close_action,
+.window_search_location,
+.booking_cell {
+    color: rgb(248, 248, 105);
+}
+
+
+/*-----*/
+
+
+/*-картинка дети-*/
+
+.kids_1_img {
+    display: block;
+    width: 90vw !important;
+    margin: auto;
+}
+
+.kids_1_img img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+
+/*---блок о компании----*/
+
+.info_company {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: max-content;
+    justify-content: center;
+}
+
+.info_company h2 {
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 8vh;
+}
+
+.info_company p {
+    line-height: 5vh;
+    padding: 0 8vw;
+}
+
+.motto {
+    display: block;
+    height: 20vh;
+    margin-top: 8vh;
+    text-align: center;
+    font-size: 2vw;
+    padding: 0 8vw 15vh;
+}
+
+
+/**-------*/
+
+
+/*--разделитель-line-circle--*/
+
+.line_circle_wrapper {
+    z-index: 20;
+    display: block;
+    width: 100%;
+    height: 6.3vh;
+    position: relative;
+    margin-top: 1vh;
+}
+
+.line_circle_2 {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 12vh;
+    background-image: url('../img/line_cirсle_2_png.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    top: 0;
+}
+
+
+/*----блок отзывы---*/
+
+.reviews_section {
+    position: relative;
+    z-index: 11;
+    box-sizing: border-box;
+    width: 100%;
+    height: max-content;
+    padding-top: 10vh;
+    background: rgb(3, 136, 166);
+    background: linear-gradient( 0deg, rgba(3, 136, 166, 1) 0%, rgba(125, 155, 183, 1) 38%, rgba(242, 174, 199, 1) 100%);
+}
+
+.reviews_h2 {
+    display: block;
+    z-index: 10;
+    margin: 8vh auto 6vh;
+    font-size: 4vw;
+    text-align: center;
+    color: #0e97e7;
+    text-shadow: -0 -4px 2px #ffffff, 0 -4px 2px #ffffff, -0 4px 2px #ffffff, 0 4px 2px #ffffff, -4px -0 2px #ffffff, 4px -0 2px #ffffff, -4px 0 2px #ffffff, 4px 0 2px #ffffff, -1px -4px 2px #ffffff, 1px -4px 2px #ffffff, -1px 4px 2px #ffffff, 1px 4px 2px #ffffff, -4px -1px 2px #ffffff, 4px -1px 2px #ffffff, -4px 1px 2px #ffffff, 4px 1px 2px #ffffff, -2px -4px 2px #ffffff, 2px -4px 2px #ffffff, -2px 4px 2px #ffffff, 2px 4px 2px #ffffff, -4px -2px 2px #ffffff, 4px -2px 2px #ffffff, -4px 2px 2px #ffffff, 4px 2px 2px #ffffff, -3px -4px 2px #ffffff, 3px -4px 2px #ffffff, -3px 4px 2px #ffffff, 3px 4px 2px #ffffff, -4px -3px 2px #ffffff, 4px -3px 2px #ffffff, -4px 3px 2px #ffffff, 4px 3px 2px #ffffff, -4px -4px 2px #ffffff, 4px -4px 2px #ffffff, -4px 4px 2px #ffffff, 4px 4px 2px #ffffff, -4px -4px 2px #ffffff, 4px -4px 2px #ffffff, -4px 4px 2px #ffffff, 4px 4px 2px #ffffff;
+}
+
+.reviews_wrapper_position_relative {
+    position: relative;
+}
+
+.reviews_wrapper {
+    z-index: 50;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 31vh;
+}
+
+
+/*--------*/
+
+.reviews_wrapper_relative {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 44vh;
+}
+
+
+/*---------*/
+
+.reviews {
+    z-index: 10;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    margin: 0;
+    padding: 5vh 2vw;
+    align-items: flex-start;
+    top: 3vh;
+    border-radius: 3vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.reviews:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 2px solid white;
+}
+
+
+/*-тени-*/
+
+.reviews_1 {
+    box-shadow: 1vw 4vh 15px 15px rgba(0, 0, 0, 0.4);
+}
+
+.reviews_2 {
+    box-shadow: 0px 4vh 15px 15px rgba(0, 0, 0, 0.4);
+}
+
+.reviews_3 {
+    box-shadow: -1vw 4vh 15px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+/**/
+
+.reviews_content {
+    width: 12vw;
+    height: max-content;
+    padding: 0 1vw;
+}
+
+.reviews img {
+    width: 10vw;
+    height: 20vh;
+    margin: 0;
+    border-radius: 50%;
+}
+
+.reviews_name {
+    text-align: center;
+    font-size: 1.5vw;
+    margin-top: 2vh;
+}
+
+.reviews_text {
+    width: 12vw;
+    height: 24vh;
+    font-size: 1.4vw;
+    line-height: 1.6vw;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.reviews_data {
+    margin-top: 2vh;
+    font-size: 1.4vw;
+    line-height: 3vh;
+}
+
+.reviews_open_bg {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 99vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 90;
+}
+
+
+/*открываем новости*/
+
+.reviews_open {
+    box-sizing: border-box;
+    position: fixed;
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    margin: 0;
+    padding: 10vh 8vw;
+    align-items: center;
+    justify-content: space-around;
+    top: 10vh;
+    left: 9vw;
+    font-size: 3vw;
+    border-radius: 3vw;
+    background-color: rgba(12, 87, 104, 0.9) !important;
+    z-index: 100 !important;
+    border: 2px solid white;
+}
+
+.reviews_open_content {
+    width: 65vw;
+    height: max-content;
+    padding: 0 1vw;
+}
+
+.reviews_open_text {
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    margin-left: 6vw;
+    width: 45vw;
+    height: 50vh;
+    font-size: 2vw;
+    line-height: 2.5vw;
+    overflow: auto;
+}
+
+.reviews_open_content .reviews_data {
+    text-align: end;
+}
+
+.btn-close {
+    position: absolute;
+    top: 10vh;
+    right: 6vw;
+    width: 5vw;
+    height: 1vh;
+    font-size: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+/*кнопа закрытия окна увеличения отзыва*/
+
+.btn-close::before,
+.btn-close::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    width: 5vw;
+    height: 1vh;
+    background-color: #d0d0d0;
+}
+
+.btn-close:hover::before,
+.btn-close:hover::after {
+    background-color: #ff0000;
+}
+
+.btn-close::before {
+    transform: rotate(45deg);
+}
+
+.btn-close::after {
+    transform: rotate(-45deg);
+}
+
+.reviews_open:hover {
+    cursor: pointer;
+}
+
+
+/*-----*/
+
+
+/*--конфети--*/
+
+.konfeti_1_img {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 99%;
+    height: 100%;
+    top: 0;
+    left: 0.5%;
+    background-image: url('../img/konfeti.png');
+    background-size: 100% 100%;
+    opacity: 0.5;
+}
+
+
+/*-----инструкция бронирования---*/
+
+.manual_wrapper {
+    z-index: 10;
+    box-sizing: border-box;
+    width: 95%;
+    margin: 10vh auto 0;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.arrow_right {
+    width: 4vw;
+    margin: 0;
+    z-index: 2;
+    transform: rotateY(90deg);
+    transition-duration: 2.5s;
+}
+
+.manual {
+    box-sizing: border-box;
+    width: 13.5vw;
+    min-height: max-content;
+    padding: 3vw 0.5vw;
+    font-size: 1.7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3vw;
+    transform: rotateY(90deg);
+    transition-duration: 2.5s;
+    background-color: rgba(0, 0, 0, 0.55);
+    box-shadow: 0px 0px 40px 1vw rgba(0, 0, 0, 0.5);
+}
+
+.manual img {
+    width: 5vw;
+    height: 40%;
+    margin-bottom: 0.5vh;
+}
+
+.manual p {
+    display: block;
+    height: 80%;
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+
+/*---разделитель-2--*/
+
+
+/*см линия 1*/
+
+
+/**/
+
+
+/*-----forma--1---*/
+
+.section_form_1,
+.section_form_2 {
+    z-index: 5;
+    box-sizing: border-box;
+    display: block;
+    padding: 20vh 0 0;
+    width: 100%;
+    height: max-content;
+    margin: 0;
+}
+
+.section_form_wrapper_1 {
+    box-sizing: border-box;
+    width: 70vw;
+    padding: 10vh 2vw;
+    margin: auto;
+    margin-bottom: 8vh;
+    background-image: url('../img/map_clad.png');
+    background-size: 100% 100%;
+}
+
+.section_form_1 h2,
+.section_form_2 h2 {
+    font-weight: 900;
+    font-size: 5vw;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    text-shadow: -0 -4px 6px rgba(255, 255, 255, 0.68), 0 -4px 6px rgba(255, 255, 255, 0.68), -0 4px 6px rgba(255, 255, 255, 0.68), 0 4px 6px rgba(255, 255, 255, 0.68), -4px -0 6px rgba(255, 255, 255, 0.68), 4px -0 6px rgba(255, 255, 255, 0.68), -4px 0 6px rgba(255, 255, 255, 0.68), 4px 0 6px rgba(255, 255, 255, 0.68), -1px -4px 6px rgba(255, 255, 255, 0.68), 1px -4px 6px rgba(255, 255, 255, 0.68), -1px 4px 6px rgba(255, 255, 255, 0.68), 1px 4px 6px rgba(255, 255, 255, 0.68), -4px -1px 6px rgba(255, 255, 255, 0.68), 4px -1px 6px rgba(255, 255, 255, 0.68), -4px 1px 6px rgba(255, 255, 255, 0.68), 4px 1px 6px rgba(255, 255, 255, 0.68), -2px -4px 6px rgba(255, 255, 255, 0.68), 2px -4px 6px rgba(255, 255, 255, 0.68), -2px 4px 6px rgba(255, 255, 255, 0.68), 2px 4px 6px rgba(255, 255, 255, 0.68), -4px -2px 6px rgba(255, 255, 255, 0.68), 4px -2px 6px rgba(255, 255, 255, 0.68), -4px 2px 6px rgba(255, 255, 255, 0.68), 4px 2px 6px rgba(255, 255, 255, 0.68), -3px -4px 6px rgba(255, 255, 255, 0.68), 3px -4px 6px rgba(255, 255, 255, 0.68), -3px 4px 6px rgba(255, 255, 255, 0.68), 3px 4px 6px rgba(255, 255, 255, 0.68), -4px -3px 6px rgba(255, 255, 255, 0.68), 4px -3px 6px rgba(255, 255, 255, 0.68), -4px 3px 6px rgba(255, 255, 255, 0.68), 4px 3px 6px rgba(255, 255, 255, 0.68), -4px -4px 6px rgba(255, 255, 255, 0.68), 4px -4px 6px rgba(255, 255, 255, 0.68), -4px 4px 6px rgba(255, 255, 255, 0.68), 4px 4px 6px rgba(255, 255, 255, 0.68), -4px -4px 6px rgba(255, 255, 255, 0.68), 4px -4px 6px rgba(255, 255, 255, 0.68), -4px 4px 6px rgba(255, 255, 255, 0.68), 4px 4px 6px rgba(255, 255, 255, 0.68);
+}
+
+.form_order_1 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 2vw auto;
+    padding-top: 3%;
+    width: 70%;
+    height: max-content;
+}
+
+.input_order {
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 auto 3%;
+    padding: 1%;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 2vw;
+    text-align: center;
+    color: #000000;
+    background-color: #747270;
+    box-shadow: 0 0 50px 20px rgba(255, 255, 255, 0.15);
+    border: 10px double rgb(63, 63, 63);
+    border-radius: 30px;
+}
+
+.input_order::placeholder {
+    color: black;
+}
+
+.btn_form_order {
+    margin: 1vw auto;
+    padding: 0.5vw 4vw;
+    display: block;
+    justify-content: center;
+    font-family: inherit;
+    font-size: 2.3vw;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #000000;
+    border: 5px solid #928d8a;
+    border-radius: 30px;
+}
+
+
+/*---разделитель--3-*/
+
+
+/*см линия 1*/
+
+
+/**/

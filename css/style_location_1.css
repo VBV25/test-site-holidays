@@ -1,0 +1,915 @@
+.bg_1 {
+    z-index: -20;
+    display: block;
+    width: 98.5vw;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    background-image: url('../img/location/100.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+main {
+    height: max-content !important;
+}
+
+.up_btn {
+    background-color: #000000 !important;
+}
+
+.footer_wrapper {
+    padding-bottom: 5vh !important;
+}
+
+.location_wrapper_section {
+    box-sizing: border-box;
+}
+
+
+/*обертка блока слайдера*/
+
+.slider_info_company_wrapper {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: block;
+}
+
+
+/*затемнение слайдера и текст на нем*/
+
+.bg_info_company {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.slider_info_company {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 30vh;
+}
+
+.logo_text_img {
+    position: relative;
+    display: block;
+    width: 50vw;
+    height: 20vh;
+    top: -25vh;
+    margin-bottom: 2vh;
+}
+
+.slider_info_company p {
+    display: block;
+    margin-top: 2vh;
+    font-family: inherit;
+    font-size: 3vw;
+    line-height: 8vh;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: -0 -3px 3px rgba(0, 0, 0, 0.32), 0 -3px 3px rgba(0, 0, 0, 0.32), -0 3px 3px rgba(0, 0, 0, 0.32), 0 3px 3px rgba(0, 0, 0, 0.32), -3px -0 3px rgba(0, 0, 0, 0.32), 3px -0 3px rgba(0, 0, 0, 0.32), -3px 0 3px rgba(0, 0, 0, 0.32), 3px 0 3px rgba(0, 0, 0, 0.32), -1px -3px 3px rgba(0, 0, 0, 0.32), 1px -3px 3px rgba(0, 0, 0, 0.32), -1px 3px 3px rgba(0, 0, 0, 0.32), 1px 3px 3px rgba(0, 0, 0, 0.32), -3px -1px 3px rgba(0, 0, 0, 0.32), 3px -1px 3px rgba(0, 0, 0, 0.32), -3px 1px 3px rgba(0, 0, 0, 0.32), 3px 1px 3px rgba(0, 0, 0, 0.32), -2px -3px 3px rgba(0, 0, 0, 0.32), 2px -3px 3px rgba(0, 0, 0, 0.32), -2px 3px 3px rgba(0, 0, 0, 0.32), 2px 3px 3px rgba(0, 0, 0, 0.32), -3px -2px 3px rgba(0, 0, 0, 0.32), 3px -2px 3px rgba(0, 0, 0, 0.32), -3px 2px 3px rgba(0, 0, 0, 0.32), 3px 2px 3px rgba(0, 0, 0, 0.32), -3px -3px 3px rgba(0, 0, 0, 0.32), 3px -3px 3px rgba(0, 0, 0, 0.32), -3px 3px 3px rgba(0, 0, 0, 0.32), 3px 3px 3px rgba(0, 0, 0, 0.32), -3px -3px 3px rgba(0, 0, 0, 0.32), 3px -3px 3px rgba(0, 0, 0, 0.32), -3px 3px 3px rgba(0, 0, 0, 0.32), 3px 3px 3px rgba(0, 0, 0, 0.32);
+}
+
+
+/*картинка под хедером*/
+
+.fader_wrapper {
+    display: block;
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+
+.img {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*--------*/
+
+
+/*---разделитель--1---*/
+
+.line_cut_1 {
+    z-index: 10;
+    display: block;
+    width: 100%;
+    height: 10vh;
+    opacity: 1;
+    justify-items: center;
+    position: relative;
+    background-image: url('../img/line_cut_2_png.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.line_cut_1 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+
+/*----*/
+
+
+/*заголовок*/
+
+h1 {
+    display: block;
+    margin: 0 auto 3vh;
+    text-align: center;
+    font-size: 350%;
+    text-shadow: -0 -3px 3px rgba(0, 0, 0, 0.32), 0 -3px 3px rgba(0, 0, 0, 0.32), -0 3px 3px rgba(0, 0, 0, 0.32), 0 3px 3px rgba(0, 0, 0, 0.32), -3px -0 3px rgba(0, 0, 0, 0.32), 3px -0 3px rgba(0, 0, 0, 0.32), -3px 0 3px rgba(0, 0, 0, 0.32), 3px 0 3px rgba(0, 0, 0, 0.32), -1px -3px 3px rgba(0, 0, 0, 0.32), 1px -3px 3px rgba(0, 0, 0, 0.32), -1px 3px 3px rgba(0, 0, 0, 0.32), 1px 3px 3px rgba(0, 0, 0, 0.32), -3px -1px 3px rgba(0, 0, 0, 0.32), 3px -1px 3px rgba(0, 0, 0, 0.32), -3px 1px 3px rgba(0, 0, 0, 0.32), 3px 1px 3px rgba(0, 0, 0, 0.32), -2px -3px 3px rgba(0, 0, 0, 0.32), 2px -3px 3px rgba(0, 0, 0, 0.32), -2px 3px 3px rgba(0, 0, 0, 0.32), 2px 3px 3px rgba(0, 0, 0, 0.32), -3px -2px 3px rgba(0, 0, 0, 0.32), 3px -2px 3px rgba(0, 0, 0, 0.32), -3px 2px 3px rgba(0, 0, 0, 0.32), 3px 2px 3px rgba(0, 0, 0, 0.32), -3px -3px 3px rgba(0, 0, 0, 0.32), 3px -3px 3px rgba(0, 0, 0, 0.32), -3px 3px 3px rgba(0, 0, 0, 0.32), 3px 3px 3px rgba(0, 0, 0, 0.32), -3px -3px 3px rgba(0, 0, 0, 0.32), 3px -3px 3px rgba(0, 0, 0, 0.32), -3px 3px 3px rgba(0, 0, 0, 0.32), 3px 3px 3px rgba(0, 0, 0, 0.32);
+}
+
+
+/*---------------ФИЛЬТР ЗОН---------------------------------*/
+
+
+/*общая секция с фильтром и карточками*/
+
+.filter_location_wrapper {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 4vh 2%;
+}
+
+
+/*---САЙД по кнопке БАР---*/
+
+
+/*кнопка открытия фильтра*/
+
+.open_filter_button {
+    position: absolute;
+    right: 4vw;
+    display: block;
+    width: max-content !important;
+    font-size: 120%;
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0);
+    cursor: pointer;
+    box-sizing: border-box;
+    height: max-content;
+    margin: 0 auto;
+    padding: 1vh 2vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.8vw;
+    background-color: unset;
+    border: 2px solid rgb(254, 254, 254);
+    text-shadow: -0 -1px 2px #ffffff, 0 -1px 2px #ffffff, -0 1px 2px #ffffff, 0 1px 2px #ffffff, -1px -0 2px #ffffff, 1px -0 2px #ffffff, -1px 0 2px #ffffff, 1px 0 2px #ffffff, -1px -1px 2px #ffffff, 1px -1px 2px #ffffff, -1px 1px 2px #ffffff, 1px 1px 2px #ffffff, -1px -1px 2px #ffffff, 1px -1px 2px #ffffff, -1px 1px 2px #ffffff, 1px 1px 2px #ffffff;
+}
+
+.open_filter_button:hover {
+    box-shadow: 0 0 20px #e8e8e8;
+}
+
+
+/*общая обертка формы*/
+
+.filters {
+    z-index: 100;
+    padding: 4vh 4vw;
+    border-radius: 10px;
+    width: 30%;
+    height: max-content;
+    position: absolute;
+    top: 10vh;
+    right: 2vw;
+    background-image: url('../img/map_clad.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+
+.filters_active {
+    display: block;
+}
+
+
+/**/
+
+
+/*основные блоки фильтра*/
+
+
+/*форма*/
+
+
+/*кнопка формы*/
+
+.filter-button {
+    display: block;
+    width: max-content !important;
+    font-size: 100%;
+    /*  border-radius: 10px;*/
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0);
+    cursor: pointer;
+    box-sizing: border-box;
+    height: max-content;
+    margin: 0 auto;
+    padding: 1vh 1vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.8vw;
+    border: 2px solid black;
+    background: rgb(77, 77, 77);
+    background: linear-gradient( 180deg, rgba(77, 77, 77, 1) 0%, rgba(193, 193, 193, 1) 50%, rgba(128, 128, 128, 1) 100%);
+    text-shadow: -0 -1px 2px #ffffff, 0 -1px 2px #ffffff, -0 1px 2px #ffffff, 0 1px 2px #ffffff, -1px -0 2px #ffffff, 1px -0 2px #ffffff, -1px 0 2px #ffffff, 1px 0 2px #ffffff, -1px -1px 2px #ffffff, 1px -1px 2px #ffffff, -1px 1px 2px #ffffff, 1px 1px 2px #ffffff, -1px -1px 2px #ffffff, 1px -1px 2px #ffffff, -1px 1px 2px #ffffff, 1px 1px 2px #ffffff;
+}
+
+
+/**/
+
+.filters_text_esc {
+    position: absolute;
+    font-size: 100%;
+    color: #a8a8a8;
+    top: -1vh;
+    text-align: center;
+}
+
+
+/*блоки филдсеты фильтровые группы*/
+
+
+/*1блок чекбоксы*/
+
+fieldset.filter-brand {
+    border: none;
+    /*выключает обводку филдсетов*/
+}
+
+
+/*название групп филтрации*/
+
+.filters legend {
+    font-size: 170%;
+    line-height: 200%;
+    margin: 0 auto 1.5vh;
+    color: rgb(255, 255, 255);
+    text-shadow: -0 -2px 1px #000000, 0 -2px 1px #000000, -0 2px 1px #000000, 0 2px 1px #000000, -2px -0 1px #000000, 2px -0 1px #000000, -2px 0 1px #000000, 2px 0 1px #000000, -1px -2px 1px #000000, 1px -2px 1px #000000, -1px 2px 1px #000000, 1px 2px 1px #000000, -2px -1px 1px #000000, 2px -1px 1px #000000, -2px 1px 1px #000000, 2px 1px 1px #000000, -2px -2px 1px #000000, 2px -2px 1px #000000, -2px 2px 1px #000000, 2px 2px 1px #000000, -2px -2px 1px #000000, 2px -2px 1px #000000, -2px 2px 1px #000000, 2px 2px 1px #000000;
+}
+
+
+/*стиль списков фильтрации*/
+
+.filters ul {
+    list-style: none;
+    color: rgb(0, 0, 0);
+}
+
+
+/*оформление каждого пункта списка*/
+
+
+/*оформление не стандартного индикатора чекбокса*/
+
+
+/*крестик в нем рисуем ниже*/
+
+.checkbox-indicator {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #000000;
+    opacity: 1;
+}
+
+
+/*отключаем стандартные значки чекбоксов и радио кнопок*/
+
+.filter-input {
+    display: none;
+}
+
+
+/*оформление лейблов(наименований) каждого чекбокса*/
+
+.filter-option {
+    height: max-content;
+    margin-bottom: 2vh;
+    color: #fcc4c4;
+    opacity: 0.8;
+    text-shadow: -0 -2px 0 #000000, 0 -2px 0 #000000, -0 2px 0 #000000, 0 2px 0 #000000, -2px -0 0 #000000, 2px -0 0 #000000, -2px 0 0 #000000, 2px 0 0 #000000, -1px -2px 0 #000000, 1px -2px 0 #000000, -1px 2px 0 #000000, 1px 2px 0 #000000, -2px -1px 0 #000000, 2px -1px 0 #000000, -2px 1px 0 #000000, 2px 1px 0 #000000, -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, 2px 2px 0 #000000, -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, 2px 2px 0 #000000;
+}
+
+.filter-checkbox {
+    display: flex;
+    width: max-content;
+    height: max-content;
+    position: relative;
+    padding-left: 40%;
+    cursor: pointer;
+    font-size: 150%;
+    font-weight: 600;
+    opacity: 1;
+}
+
+
+/**/
+
+
+/*оформление при наведении и взаимодействии с кнопками*/
+
+
+/* при наведении и фокусе на элементе списка*/
+
+.filter-checkbox:hover,
+.filter-checkbox:focus,
+.filter-input:focus~.filter-checkbox .checkbox-indicator,
+.filter-input:hover~.filter-checkbox .checkbox-indicator {
+    border-color: rgb(255, 252, 252);
+    color: white;
+    opacity: 1;
+    text-shadow: -0 -4px 1px #000000, 0 -4px 1px #000000, -0 4px 1px #000000, 0 4px 1px #000000, -4px -0 1px #000000, 4px -0 1px #000000, -4px 0 1px #000000, 4px 0 1px #000000, -1px -4px 1px #000000, 1px -4px 1px #000000, -1px 4px 1px #000000, 1px 4px 1px #000000, -4px -1px 1px #000000, 4px -1px 1px #000000, -4px 1px 1px #000000, 4px 1px 1px #000000, -2px -4px 1px #000000, 2px -4px 1px #000000, -2px 4px 1px #000000, 2px 4px 1px #000000, -4px -2px 1px #000000, 4px -2px 1px #000000, -4px 2px 1px #000000, 4px 2px 1px #000000, -3px -4px 1px #000000, 3px -4px 1px #000000, -3px 4px 1px #000000, 3px 4px 1px #000000, -4px -3px 1px #000000, 4px -3px 1px #000000, -4px 3px 1px #000000, 4px 3px 1px #000000, -4px -4px 1px #000000, 4px -4px 1px #000000, -4px 4px 1px #000000, 4px 4px 1px #000000, -4px -4px 1px #000000, 4px -4px 1px #000000, -4px 4px 1px #000000, 4px 4px 1px #000000;
+}
+
+.filter-input:focus~.filter-checkbox .checkbox-indicator,
+.filter-input:hover~.filter-checkbox .checkbox-indicator {
+    box-shadow: 0px 0px 0px 3px black, 0px 0px 0px 3px black inset;
+}
+
+
+/*стилизация отключенной кнопки*/
+
+.filter-input:disabled~.filter-checkbox .checkbox-indicator,
+.filter-input:disabled~.filter-checkbox {
+    color: #000000 !important;
+    opacity: 0.7;
+    cursor: default;
+    border-color: #000000 !important;
+    text-shadow: -0 -1px 0 #ff0000, 0 -1px 0 #ff0000, -0 1px 0 #ff0000, 0 1px 0 #ff0000, -1px -0 0 #ff0000, 1px -0 0 #ff0000, -1px 0 0 #ff0000, 1px 0 0 #ff0000, -1px -1px 0 #ff0000, 1px -1px 0 #ff0000, -1px 1px 0 #ff0000, 1px 1px 0 #ff0000, -1px -1px 0 #ff0000, 1px -1px 0 #ff0000, -1px 1px 0 #ff0000, 1px 1px 0 #ff0000;
+}
+
+.filter-input:disabled~.filter-checkbox .checkbox-indicator {
+    box-shadow: 0px 0px 0px 3px rgb(255, 0, 0), 0px 0px 0px 3px rgb(255, 0, 0) inset !important;
+}
+
+
+/*при выделении чекбокса меняем цвет соответствующего лейбла*/
+
+.filter-input:checked~.filter-checkbox {
+    color: #09ff4b;
+    font-weight: 700;
+    opacity: 1;
+    text-shadow: -0 -4px 1px #000000, 0 -4px 1px #000000, -0 4px 1px #000000, 0 4px 1px #000000, -4px -0 1px #000000, 4px -0 1px #000000, -4px 0 1px #000000, 4px 0 1px #000000, -1px -4px 1px #000000, 1px -4px 1px #000000, -1px 4px 1px #000000, 1px 4px 1px #000000, -4px -1px 1px #000000, 4px -1px 1px #000000, -4px 1px 1px #000000, 4px 1px 1px #000000, -2px -4px 1px #000000, 2px -4px 1px #000000, -2px 4px 1px #000000, 2px 4px 1px #000000, -4px -2px 1px #000000, 4px -2px 1px #000000, -4px 2px 1px #000000, 4px 2px 1px #000000, -3px -4px 1px #000000, 3px -4px 1px #000000, -3px 4px 1px #000000, 3px 4px 1px #000000, -4px -3px 1px #000000, 4px -3px 1px #000000, -4px 3px 1px #000000, 4px 3px 1px #000000, -4px -4px 1px #000000, 4px -4px 1px #000000, -4px 4px 1px #000000, 4px 4px 1px #000000, -4px -4px 1px #000000, 4px -4px 1px #000000, -4px 4px 1px #000000, 4px 4px 1px #000000;
+}
+
+
+/*при выделении чекбокса меняем цвет соответствующего индикатора*/
+
+.filter-input:checked~.filter-checkbox .checkbox-indicator {
+    border-color: #09ff4b;
+    opacity: 1.5;
+    box-shadow: 0px 0px 0px 3px black, 0px 0px 0px 3px black inset;
+}
+
+
+/*рисуем крестик в нестандартном индекаторе чекбокса здесь мы рисуем две полосы которые за счет абсолютного положения находятся друг под другом*/
+
+.filter-input:checked~.filter-checkbox .checkbox-indicator::before,
+.filter-input:checked~.filter-checkbox .checkbox-indicator::after {
+    content: '';
+    position: absolute;
+    top: 1vh;
+    left: 1px;
+    width: 18px;
+    height: 3px;
+    background-color: #09ff4b;
+    box-shadow: 0px 0px 0px 3px black;
+}
+
+
+/*здесь мы по очереди вращаем каждую полосу на 45 градусов по часовой и против чтобы получить крестик*/
+
+.filter-input:checked~.filter-checkbox .checkbox-indicator::before {
+    transform: rotate(45deg);
+}
+
+.filter-input:checked~.filter-checkbox .checkbox-indicator::after {
+    transform: rotate(-45deg);
+}
+
+
+/*стилизация отключенного блока сортировки применение стилей осуществляется через disabled.js файл*/
+
+
+/*--------------*/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/*--------КАРТОЧКИ---СПИСОК---------*/
+
+.location_list_wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    height: max-content;
+}
+
+.location_card_in_list {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto 2vh;
+    padding: 1vw;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2vw;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(1, 40, 45, 0.646);
+    /* background-color: rgba(0, 0, 0, 0.65);*/
+    box-shadow: 5px 5px 10px 3px rgba(255, 255, 255, 0.884);
+}
+
+.location_card_in_list img {
+    width: 30%;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.location_info {
+    width: 55%;
+    text-align: center;
+}
+
+.location_info h2 {
+    font-size: 220%;
+}
+
+.location_info p {
+    font-size: 180%;
+}
+
+.location_info h3 {
+    margin: 2vh 0;
+    font-size: 150%;
+    position: relative;
+}
+
+
+/*квадраты с цветом соответствующим цвету текста метки на карте*/
+
+.location_info h3::before {
+    position: absolute;
+    left: 10vw;
+    content: '';
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+}
+
+.location_info_1 h3::before {
+    background-color: rgb(233, 74, 0);
+}
+
+.location_info_2 h3::before {
+    background-color: rgb(0, 183, 255);
+}
+
+.location_info_3 h3::before {
+    background-color: rgb(22, 124, 19);
+}
+
+.location_info_4 h3::before {
+    background-color: rgb(0, 183, 255);
+}
+
+.location_info_5 h3::before {
+    background-color: rgb(22, 124, 19);
+}
+
+.location_info_6 h3::before {
+    background-color: rgb(247, 0, 255);
+}
+
+.location_info_7 h3::before {
+    background-color: rgb(233, 74, 0);
+}
+
+.location_info_8 h3::before {
+    background-color: rgb(247, 0, 255);
+}
+
+
+/*-----*/
+
+
+/**/
+
+.location_info_text {
+    margin: 4vh 0;
+    color: #00fc43;
+}
+
+.location_info p:last-child {
+    font-size: 180%;
+}
+
+
+/*кнопки*/
+
+.btn_wrapper_location {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn_wrapper_location a {
+    font-size: 110%;
+}
+
+.btn_card_location {
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 10vw;
+    height: max-content;
+    margin-bottom: 3vh;
+    padding: 1vh 0.2vw;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.8vw;
+    color: black;
+    border: 2px solid black;
+    background: rgb(77, 77, 77);
+    background: linear-gradient( 180deg, rgba(77, 77, 77, 1) 0%, rgba(193, 193, 193, 1) 50%, rgba(128, 128, 128, 1) 100%);
+    text-shadow: -0 -1px 2px #ffffff, 0 -1px 2px #ffffff, -0 1px 2px #ffffff, 0 1px 2px #ffffff, -1px -0 2px #ffffff, 1px -0 2px #ffffff, -1px 0 2px #ffffff, 1px 0 2px #ffffff, -1px -1px 2px #ffffff, 1px -1px 2px #ffffff, -1px 1px 2px #ffffff, 1px 1px 2px #ffffff, -1px -1px 2px #ffffff, 1px -1px 2px #ffffff, -1px 1px 2px #ffffff, 1px 1px 2px #ffffff;
+}
+
+
+/*------------------------------------------------*/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/*общая карта*/
+
+.map_wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    padding: 6vh 0 12vh;
+    background-color: white;
+    z-index: 20;
+    position: relative;
+}
+
+.map_wrapper_h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 400%;
+    color: #000000;
+    margin-bottom: 7vh;
+}
+
+.map_location {
+    width: 100%;
+    height: 95%;
+    margin: 0;
+    background-image: url('../img/plan/1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+
+/*ставим точки на карте----*/
+
+.location_mark {
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 120%;
+    text-shadow: -0 -3px 2px #000000, 0 -3px 2px #000000, -0 3px 2px #000000, 0 3px 2px #000000, -3px -0 2px #000000, 3px -0 2px #000000, -3px 0 2px #000000, 3px 0 2px #000000, -1px -3px 2px #000000, 1px -3px 2px #000000, -1px 3px 2px #000000, 1px 3px 2px #000000, -3px -1px 2px #000000, 3px -1px 2px #000000, -3px 1px 2px #000000, 3px 1px 2px #000000, -2px -3px 2px #000000, 2px -3px 2px #000000, -2px 3px 2px #000000, 2px 3px 2px #000000, -3px -2px 2px #000000, 3px -2px 2px #000000, -3px 2px 2px #000000, 3px 2px 2px #000000, -3px -3px 2px #000000, 3px -3px 2px #000000, -3px 3px 2px #000000, 3px 3px 2px #000000, -3px -3px 2px #000000, 3px -3px 2px #000000, -3px 3px 2px #000000, 3px 3px 2px #000000;
+}
+
+.local_icon {
+    width: 4vw;
+    height: 4vw;
+    margin: auto;
+    background-image: url('../img/plan/navigation_mark.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.location_mark:hover .local_icon {
+    background-image: url('../img/plan/navigation_mark_aktive.svg');
+}
+
+.location_mark:hover {
+    color: rgb(247, 107, 240);
+}
+
+
+/*картинки на карте при наведении на метку*/
+
+.mini_logo_location {
+    z-index: 80;
+    display: none;
+    position: absolute;
+    top: 10vh;
+    left: -6vw;
+    width: 10vw;
+    height: 5vw;
+    background-color: #666666;
+    border: 5px solid black;
+    background-size: 100% 100%;
+}
+
+.mini_logo_location_1 {
+    background-image: url('../img/location/25.jpg');
+}
+
+.mini_logo_location_2 {
+    background-image: url('../img/location/6.jpg');
+}
+
+.mini_logo_location_3 {
+    background-image: url('../img/location/27.jpg');
+}
+
+.mini_logo_location_4 {
+    background-image: url('../img/location/7.jpg');
+}
+
+.mini_logo_location_5 {
+    background-image: url('../img/location/18.jpg');
+}
+
+.mini_logo_location_6 {
+    background-image: url('../img/location/8.jpg');
+}
+
+.mini_logo_location_7 {
+    background-image: url('../img/location/2.jpg');
+}
+
+.mini_logo_location_8 {
+    background-image: url('../img/location/9.jpg');
+}
+
+
+/*ставим точки*/
+
+.location_1 {
+    top: 52%;
+    left: 48%;
+}
+
+.location_2 {
+    top: 42%;
+    left: 42%;
+}
+
+.location_3 {
+    top: 20%;
+    left: 82%;
+}
+
+.location_4 {
+    top: 65%;
+    left: 20%;
+}
+
+.location_5 {
+    top: 69%;
+    left: 67%;
+}
+
+.location_6 {
+    top: 20%;
+    left: 61%;
+}
+
+.location_7 {
+    top: 33%;
+    left: 26%;
+}
+
+.location_8 {
+    top: 50%;
+    left: 70%;
+}
+
+
+/*--карточки---*/
+
+.card_wrapper {
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.location_card {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 80%;
+    height: 95%;
+}
+
+.location_card h2 {
+    font-size: 180%;
+    color: #ffffff;
+}
+
+.location_card h3 {
+    font-size: 150%;
+    margin-bottom: 2vh;
+}
+
+.location_card p {
+    font-size: 120%;
+}
+
+.location_card img {
+    display: block;
+    margin: 0 auto;
+    width: 55%;
+    border-radius: 3vw;
+}
+
+.btn_card {
+    width: max-content;
+    height: max-content;
+    padding: 2vh 2vw;
+    font-size: 150%;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 2vw;
+    display: block;
+    margin: 2vh auto 0;
+    cursor: pointer;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 1) inset;
+}
+
+.btn-close {
+    position: absolute;
+    top: 5vh;
+    right: 2.5vw;
+    width: 22px;
+    height: 22px;
+    font-size: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+/*кнопа закрытия окна увеличения фото*/
+
+.btn-close::before,
+.btn-close::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    width: 35px;
+    height: 4px;
+    background-color: #d0d0d0;
+}
+
+.btn-close:hover::before,
+.btn-close:hover::after {
+    background-color: #ff0000;
+}
+
+.btn-close::before {
+    transform: rotate(45deg);
+}
+
+.btn-close::after {
+    transform: rotate(-45deg);
+}
+
+
+/*активация карточки*/
+
+.card_active {
+    display: flex;
+}
+
+
+/**/
+
+
+/*
+.filter-button:focus {
+    color: #ff0000;
+}
+*/
+
+
+/**/
+
+
+/*текст подсказка закрытия*/
+
+.text_esc {
+    position: absolute;
+    left: 1vw;
+    bottom: 2vh;
+    opacity: 0.4;
+}
+
+
+/*якоря*/
+
+.anchor_wrapper {
+    width: 0.1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.anchor {
+    width: 100%;
+}
