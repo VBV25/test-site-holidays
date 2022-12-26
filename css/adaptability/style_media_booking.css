@@ -1,0 +1,145 @@
+/*------------------MOBILE-----------*/
+
+@media (max-width: 1030px) {
+    label {
+        font-size: 135%;
+    }
+    .filter_checkbox_booking p {
+        font-size: 50%;
+        width: 55%;
+        text-align: center;
+    }
+    /*оформление не стандартного индикатора чекбокса*/
+    .checkbox_indicator_booking {
+        width: 4vw;
+        height: 4vw;
+    }
+    /*при активации рисуем галочку и меняем цвет индикатора*/
+    .input_order:checked~.filter_checkbox_booking .checkbox_indicator_booking::before {
+        width: 1.2vw;
+    }
+    .input_order:checked~.filter_checkbox_booking .checkbox_indicator_booking::after {
+        width: 2vw;
+    }
+}
+
+
+/*----*/
+
+@media (max-width: 800px) {
+    label {
+        font-size: 150%;
+    }
+    .message_fail {
+        font-size: 140%;
+        margin-bottom: 2vh;
+    }
+    .checkbox_indicator_booking {
+        top: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    /*разделитель*/
+    .line_cut {
+        height: 0.7%;
+    }
+    /*заголовок*/
+    .section_form h2,
+    .section_form h3 {
+        text-shadow: -0 -2px 0 #ffffff, 0 -2px 0 #ffffff, -0 2px 0 #ffffff, 0 2px 0 #ffffff, -2px -0 0 #ffffff, 2px -0 0 #ffffff, -2px 0 0 #ffffff, 2px 0 0 #ffffff, -1px -2px 0 #ffffff, 1px -2px 0 #ffffff, -1px 2px 0 #ffffff, 1px 2px 0 #ffffff, -2px -1px 0 #ffffff, 2px -1px 0 #ffffff, -2px 1px 0 #ffffff, 2px 1px 0 #ffffff, -2px -2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, 2px 2px 0 #ffffff, -2px -2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, 2px 2px 0 #ffffff;
+    }
+    .section_form h2 {
+        font-size: 500%;
+        margin-top: 8%;
+    }
+    .form_order .memo {
+        font-size: 220%;
+        margin: 2% 0 4%;
+    }
+    /*группы форм*/
+    .form_group_booking {
+        flex-direction: column;
+        padding: 0.5% 0;
+        justify-content: space-around;
+        text-align: center;
+    }
+    /*обертка инпут группы с блоком ошибки*/
+    label {
+        font-size: 350% !important;
+    }
+    .message_fail {
+        font-size: 200%;
+    }
+    /*стили инпутов*/
+    .input_order {
+        width: 70vw;
+        font-size: 100%;
+    }
+    .form_group_booking_min .input_order {
+        width: 50vw;
+    }
+    .input_order_select {
+        width: 80vw !important;
+    }
+    /**/
+    /**/
+    /*превью*/
+    .location_preview_wrapper {
+        width: 80vw;
+        height: 30vh;
+        padding: 2vh;
+        margin: 0 auto 5vh;
+        font-size: 350%;
+    }
+    /*--чекбоксы доп услуги*/
+    .check_h3 {
+        font-size: 330% !important;
+    }
+    .form_group_booking_checkbox label p {
+        font-size: 130% !important;
+        width: 60%;
+        padding-top: 0;
+        margin-bottom: 2vh;
+    }
+    .price_checkbox {
+        width: 100%;
+    }
+    .form_group_booking_checkbox input.price {
+        width: 80% !important;
+        margin: auto;
+    }
+    /*оформление не стандартного индикатора чекбокса*/
+    .checkbox_indicator_booking {
+        top: 8%;
+        left: 70vw;
+        width: 8vw;
+        height: 8vw;
+    }
+    .input_order:checked~.filter_checkbox_booking .checkbox_indicator_booking::before {
+        width: 2.8vw;
+        left: 9%;
+        top: 65%;
+        height: 0.5vh;
+    }
+    .input_order:checked~.filter_checkbox_booking .checkbox_indicator_booking::after {
+        width: 4.5vw;
+        left: 25%;
+        top: 50%;
+        height: 0.5vh;
+    }
+    /**/
+    .itog {
+        font-size: 400% !important;
+    }
+    /*кнопка*/
+    .btn_form_order {
+        font-size: 350%;
+        margin-bottom: 0.5vh !important;
+    }
+    /*ошибки*/
+    .message_fail,
+    .err_checked_input_text {
+        font-size: 300% !important;
+    }
+}

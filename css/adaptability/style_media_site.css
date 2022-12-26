@@ -1,0 +1,495 @@
+/*------------------планшет-----------*/
+
+@media (max-width: 1280px) {
+    header h2,
+    footer h2 {
+        text-shadow: none !important;
+    }
+    /*хедер*/
+    .header_pc {
+        width: 100%;
+        height: max-content;
+        justify-content: center;
+        padding: 1vh 0;
+    }
+    /*логотип*/
+    .header-logo {
+        margin: 0;
+        justify-self: center;
+        width: 13vw;
+        height: 13vh;
+        grid-area: logo_header;
+    }
+    .header-logo img {
+        width: 100%;
+        height: 100%;
+    }
+    /*кнопка личного кабинета*/
+    .user-navigation {
+        margin: 0;
+        z-index: 5;
+        width: 13vw;
+        height: max-content;
+    }
+    .login-link {
+        padding-left: 4vw;
+        justify-content: end;
+        font-size: 2.1vw;
+        width: max-content;
+    }
+    .login-link::before {
+        top: 0.7vw;
+        left: 0.5vw;
+        width: 3vw;
+        height: 3vw;
+    }
+    /*навигация*/
+    .nav_header {
+        width: 70vw;
+        font-size: 3.2vw;
+        padding: 0.3vw 0;
+    }
+    .nav_header p,
+    .li_1_level_a {
+        width: 17.5vw;
+        font-size: 2.3vw;
+        /*padding: 0.3vw 0;*/
+    }
+    .li_1_level {
+        width: max-content;
+        height: 70%;
+        margin: 2vh 0vw;
+    }
+    /*footer*/
+    .footer_wrapper {
+        padding-top: 1vh;
+        padding-bottom: 2vh;
+    }
+    .footer_logo {
+        margin: 2vh 1vw 3vw;
+        width: 27vw;
+    }
+    .footer_info h2 {
+        font-size: 3.5vw;
+    }
+    .footer_info p,
+    .footer_info a {
+        font-size: 2.5vw;
+        line-height: 3vw;
+    }
+    .icon_footer_wrapper {
+        margin-top: 2vh;
+    }
+    .copyright_mobile {
+        width: 27vw;
+        font-size: 2.7vw;
+    }
+    .map {
+        max-height: 40vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    /*контакты*/
+    .contacts {
+        width: 80%;
+        height: 80%;
+        grid-template-rows: 0.5fr 1.5fr 1.5fr 4fr;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 4%;
+        grid-column-gap: 3%;
+    }
+    .contacts_h2 {
+        text-shadow: none !important;
+        font-size: 450%;
+        line-height: 100%;
+        height: max-content;
+    }
+    .contacts h3 {
+        font-size: 280%;
+        padding: 10% 0;
+    }
+    .contacts p {
+        font-size: 250%;
+    }
+    .map {
+        max-height: 30vh;
+    }
+    /*кнопка закрытия*/
+    .btn_close_contacts {
+        width: 8vw;
+        height: 8vw;
+        right: 2%;
+        top: 2%;
+    }
+    .btn_close_contacts::after,
+    .btn_close_contacts::before {
+        top: 3vw;
+        left: 0;
+        width: 8vw;
+        height: 0.7vh;
+    }
+}
+
+
+/*------------------MOBILE-----------*/
+
+@media (max-width: 700px) {
+    body {
+        width: 100%;
+    }
+    /*хедер*/
+    .header_pc {
+        width: 100%;
+        height: max-content;
+        padding: 0;
+        display: grid;
+        grid-template-areas: 'btn_burger logo_header user_nav_header' 'mobile_nav_head mobile_nav_head mobile_nav_head';
+        grid-template-rows: 22vmin;
+        grid-template-columns: 1.5fr 2fr 1.5fr;
+        grid-column-gap: auto;
+    }
+    /*кнопка бургер*/
+    .btn_burger_header_wrapper {
+        justify-self: start;
+        margin-left: 4vw;
+        display: block;
+        grid-area: btn_burger;
+    }
+    /*логотип*/
+    .header-logo {
+        justify-self: center;
+        width: 30vmin;
+        height: 18vmin;
+        grid-area: logo_header;
+        margin: 0;
+    }
+    /*кнопка личного кабинета*/
+    .user-navigation {
+        grid-area: user_nav_header;
+        display: block;
+        justify-self: end;
+        z-index: 5;
+        width: 12vmin;
+        height: 12vmin;
+        padding: 0 0 0 0;
+        margin-right: 4vw;
+    }
+    .login-link {
+        display: flex;
+        padding-left: 0;
+        padding-top: 7.5vmin;
+        margin-right: 0 !important;
+        font-size: 5vmin;
+        width: max-content;
+    }
+    .desctop_login-link {
+        display: none;
+    }
+    .mobile_login-link {
+        display: flex;
+    }
+    .login-link::before {
+        top: 0.5vmin;
+        left: 3vmin;
+        width: 6vmin;
+        height: 6vmin;
+        margin-right: 0 !important;
+    }
+    /*--------навигация----------*/
+    .desctop_nav_header {
+        display: none;
+    }
+    .activation_mobile_nav_header {
+        display: none;
+    }
+    .mobile_nav_header_wrapper {
+        z-index: 8;
+        position: absolute;
+        top: 23vmin;
+        left: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        grid-area: mobile_nav_head;
+    }
+    .mobile_nav_header {
+        height: max-content;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .nav_header p {
+        width: 23vmin;
+        font-size: 3.2vmin;
+        padding: 0.3vmin 0;
+    }
+    .li_1_level {
+        width: max-content;
+        height: 70%;
+        margin: 4vmin 0vw;
+    }
+    .li_1_level_a {
+        width: 23vmin;
+        font-size: 3.2vmin;
+        padding: 0.3vmin 0;
+    }
+    /*линия*/
+    .desctop_line_header {
+        display: none;
+    }
+    .mobile_line_header {
+        display: block;
+        width: 100%;
+        height: 7.5vmin;
+        z-index: 1;
+        top: 3vmin;
+    }
+    /*--*/
+    /*-------------------------------*/
+    /*----------footer mobile-----*/
+    /**/
+    .desctop_footer {
+        display: none;
+    }
+    /**/
+    .footer_mobile {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1vh 1vw 2vh;
+        display: grid;
+        grid-template-areas: 'logo_footer_mobile logo_footer_mobile  logo_footer_mobile' 'group_footer_1 footer_menu group_footer_2 ' 'icon_footer_1 group_footer_3 icon_footer_2 ' 'contacts_footer_1 icon_footer_3 contacts_footer_2 ' 'copyright copyright copyright';
+        grid-template-rows: 3fr 1fr * 5;
+        grid-template-columns: 1fr * 3;
+        grid-column-gap: 2vw;
+        grid-column-gap: 2vh;
+        background-color: #55878c;
+        font-family: inherit;
+        font-weight: 400;
+    }
+    /*logo*/
+    .footer_logo_wrapper_mobile {
+        grid-area: logo_footer_mobile;
+        width: 100%;
+        display: block;
+    }
+    .footer_logo_wrapper_mobile img {
+        display: block;
+        margin: auto;
+        width: 130px;
+        height: 80px;
+    }
+    /*--меню---подвала*/
+    /*группы*/
+    .group_footer_nav_1 {
+        grid-area: group_footer_1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .group_footer_nav_2 {
+        grid-area: group_footer_2;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+    }
+    .group_footer_nav_3 {
+        display: grid;
+        grid-area: group_footer_3;
+        line-height: 3.7vw;
+        justify-content: center;
+    }
+    .group_footer_nav a,
+    .group_footer_nav p {
+        display: block;
+        text-align: center;
+        align-items: center;
+        font-size: 4vw;
+        text-transform: uppercase;
+    }
+    .group_footer_nav_3 a:nth-child(2) {
+        margin: 1vh 0;
+    }
+    .group_footer_nav p {
+        color: #f2aec7;
+    }
+    /*заголовок меню подвала*/
+    .menu_h2_footer_mobile {
+        grid-area: footer_menu;
+        margin: 2vh 0 2vh;
+        font-size: 6vw;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    /*иконки соц сетей*/
+    .icon_footer_wrapper_mobile {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+    }
+    .icon_footer_wrapper_mobile a {
+        display: flex;
+        align-content: center;
+    }
+    .icon_footer {
+        display: flex;
+        width: 8vw;
+        height: 8vw;
+        align-items: center;
+        border-radius: 10%;
+    }
+    .icon_footer_wrapper_mobile_1 {
+        grid-area: icon_footer_1;
+    }
+    .icon_footer_wrapper_mobile_2 {
+        grid-area: icon_footer_2;
+    }
+    .icon_footer_wrapper_mobile_3 {
+        grid-area: icon_footer_3;
+        padding: 1vh 0 1vh;
+    }
+    /*контакты футер*/
+    .contats_footer_mobile {
+        font-size: 4vw;
+        text-align: center;
+        padding: 1vh 0;
+    }
+    .contats_footer_mobile_1 {
+        grid-area: contacts_footer_1;
+        align-content: center;
+        line-height: 6.3vw !important;
+    }
+    .contats_footer_mobile_2 {
+        grid-area: contacts_footer_2;
+        align-content: center;
+        line-height: 5vw;
+    }
+    /*коперайт*/
+    .copyright_mobile {
+        grid-area: copyright;
+        width: 100%;
+        font-size: 4vw;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 3.5vw;
+        margin-top: 1.5vh;
+    }
+    /**/
+    /*обратная связь*/
+    .feedback {
+        width: 80%;
+        max-height: 90%;
+    }
+    .feedback_form {
+        width: 100%;
+        height: 80%;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: none !important;
+        grid-template-rows: 0.5fr 1fr 0.5fr 0.5fr 1fr 0.5fr 0.5fr 1fr 0.5fr 0.5fr 5fr 0.5fr 3fr !important;
+    }
+    .feedback_h2 {
+        font-size: 450%;
+        text-shadow: none !important;
+    }
+    .feedback_form>label {
+        font-size: 400%;
+        padding: 0;
+        grid-column: unset;
+    }
+    .feedback_form>input {
+        font-size: 350%;
+        grid-column: unset;
+    }
+    .feedback_form>textarea {
+        font-size: 250%;
+        grid-column: unset;
+    }
+    .feedback_form>button {
+        grid-column: unset;
+        font-size: 300%;
+        margin: 1vh auto;
+        height: max-content;
+    }
+    .message_fail_feedback {
+        grid-column: unset;
+        font-size: 250%;
+    }
+}
+
+
+/*------------------MOBILE-----------*/
+
+@media (max-width: 500px) {
+    /*хедер*/
+    .header_pc {
+        grid-template-columns: 30vw 40vw 30vw;
+    }
+    .up_btn {
+        width: 10vw;
+        height: 10vw;
+    }
+}
+
+
+/*--*/
+
+
+/*----по высоте---*/
+
+@media (max-height: 300px) {
+    /*хедер*/
+    .header_pc {
+        padding: 2vmin 0;
+        grid-template-rows: 35vmin;
+    }
+    /*кнопка бургер*/
+    .btn_burger_header_wrapper {
+        width: 20vmin;
+        height: 20vmin;
+    }
+    /*логотип*/
+    .header-logo {
+        width: 40vmin;
+        height: 33vmin;
+    }
+    /*кнопка личного кабинета*/
+    .user-navigation {
+        width: 22vmin;
+        height: 22vmin;
+    }
+    .login-link {
+        padding-top: 12.5vmin;
+        font-size: 8vmin;
+    }
+    .login-link::before {
+        top: 0.5vmin;
+        left: 3vmin;
+        width: 12vmin;
+        height: 12vmin;
+    }
+    /*--------навигация----------*/
+    .mobile_nav_header_wrapper {
+        top: 42vmin;
+    }
+    .li_1_level {
+        height: 70%;
+        margin: 4vmin 0vw;
+    }
+    .nav_header p {
+        width: 65vmin;
+        font-size: 8vmin;
+        padding: 0.5vmin 0;
+    }
+    .li_1_level_a {
+        width: 65vmin;
+        font-size: 8vmin;
+        padding: 0.5vmin 0;
+    }
+    /*линия*/
+    .mobile_line_header {
+        height: 100%;
+        top: 0;
+    }
+    /*--*/
+}

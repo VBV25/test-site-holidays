@@ -1,0 +1,698 @@
+/*------------------MOBILE-----------*/
+
+@media (max-width: 900px) {
+    * {
+        box-sizing: border-box;
+    }
+    h2 {
+        text-shadow: -0 -2px 0 #ffffff, 0 -2px 0 #ffffff, -0 2px 0 #ffffff, 0 2px 0 #ffffff, -2px -0 0 #ffffff, 2px -0 0 #ffffff, -2px 0 0 #ffffff, 2px 0 0 #ffffff, -1px -2px 0 #ffffff, 1px -2px 0 #ffffff, -1px 2px 0 #ffffff, 1px 2px 0 #ffffff, -2px -1px 0 #ffffff, 2px -1px 0 #ffffff, -2px 1px 0 #ffffff, 2px 1px 0 #ffffff, -2px -2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, 2px 2px 0 #ffffff, -2px -2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, 2px 2px 0 #ffffff !important;
+    }
+    /*-----блок слайдер и бренд---------*/
+    .slider_info_company_wrapper {
+        height: max-content;
+    }
+    .bg_info_company {
+        height: 80vmin;
+    }
+    .slider_info_company {
+        height: 80vmin;
+        top: 0vh;
+        justify-content: space-between;
+    }
+    .logo_text_img {
+        top: 5vmin;
+        width: 80vmin;
+        height: 20vmin;
+    }
+    .slider_info_company p {
+        font-size: 5vmin;
+        line-height: 5.3vmin;
+    }
+    .slog_1_info_company {
+        margin-top: 30vmin !important;
+    }
+    .slog_2_info_company {
+        margin-top: 0.5vmin !important;
+    }
+    /*слайдер*/
+    .fader_wrapper {
+        height: 80vmin;
+    }
+    /*разделитель--1*/
+    .line_cut_1 {
+        height: 8vmin;
+    }
+    /* блок приемущества*/
+    .features {
+        padding: 2vmin 2vmin 1vmin;
+    }
+    .features-list {
+        display: grid;
+        margin-bottom: 4vmin;
+    }
+    .features-item {
+        width: 100%;
+        padding-top: 5vmin;
+    }
+    .img_features {
+        width: 15vmin;
+        height: 15vmin;
+        margin-bottom: 0vh;
+    }
+    .features-item h3 {
+        margin-bottom: 1.5vmin;
+        font-size: 7vmin;
+        line-height: 8vmin;
+    }
+    .features-item p {
+        margin: 0;
+        line-height: 5vmin;
+        font-size: 4.6vmin;
+    }
+    /*---блок о компании----*/
+    .info_company h2 {
+        font-size: 6.7vmin;
+        margin: 3vmin 0 5vmin;
+        text-shadow: none !important;
+    }
+    .info_company p {
+        text-align: center;
+        line-height: 4.3vmin;
+        padding: 0 4vmin;
+        font-size: 3.8vmin;
+    }
+    .motto {
+        height: max-content;
+        margin: 5vmin 0;
+        font-size: 4.8vmin !important;
+        line-height: 5.2vmin !important;
+        padding: 0 8vmin 5vmin;
+    }
+    /*--разделитель-line-circle--*/
+    .line_circle_wrapper {
+        height: 4.3vmin;
+    }
+    .line_circle_2 {
+        width: 100%;
+        height: 8vmin;
+    }
+    /*----блок отзывы---*/
+    .reviews_section {
+        padding-top: 3vmin;
+    }
+    .reviews_h2 {
+        margin: 4vmin auto 4vmin;
+        font-size: 6vmin;
+    }
+    .reviews_wrapper {
+        flex-direction: column;
+        top: 16vmin;
+    }
+    .reviews_wrapper_relative {
+        height: 120vmin;
+    }
+    .reviews {
+        width: 95%;
+        height: 35vmin;
+        margin: 0 auto 3vmin;
+        padding: 0.3vmin;
+        /* top: 10vmin;*/
+        align-items: center;
+    }
+    .reviews_content {
+        width: 75%;
+        margin: auto;
+        height: 90%;
+        padding: 0 1vmin;
+    }
+    .reviews_img_wrapper {
+        width: 25%;
+    }
+    .reviews img {
+        display: block;
+        margin: auto;
+        width: 17vmin;
+        height: 17vmin;
+    }
+    .reviews_name {
+        font-size: 4vmin;
+        margin-top: 0.5vmin;
+    }
+    .reviews_text {
+        width: 100%;
+        height: 58%;
+        -webkit-line-clamp: 4;
+        font-size: 4vmin;
+        line-height: 4.3vmin;
+    }
+    .reviews_data {
+        width: 50%;
+        height: 30%;
+        margin: 3% 0 0 auto;
+        font-size: 3vmin;
+        line-height: 3.3vmin;
+        text-align: center;
+    }
+    .reviews_open_bg {
+        width: 100%;
+        height: 100%;
+    }
+    /*открываем новости*/
+    .reviews_open {
+        width: 90vw;
+        height: max-content;
+        max-height: 85vh;
+        padding: 3vmin 3vmin;
+        top: 7.5vh;
+        left: 5vmin;
+    }
+    .reviews_open_content {
+        width: 75vw;
+        height: max-content;
+        padding: 0 0.5vmin;
+    }
+    .reviews_open_text {
+        margin-left: 4vmin;
+        width: 90%;
+        height: max-content;
+        max-height: 70vh;
+        font-size: 5vmin;
+        line-height: 5.2vmin;
+        align-items: center;
+        overflow: auto;
+    }
+    .reviews_open_content .reviews_data {
+        font-size: 5vmin;
+        line-height: 5.2vmin;
+        width: 100%;
+    }
+    .btn-close {
+        z-index: 100;
+        top: 6vmin;
+        left: 6vmin;
+    }
+    /*кнопа закрытия окна увеличения отзыва*/
+    .btn-close::before,
+    .btn-close::after {
+        width: 7vmin;
+        height: 1vmin;
+    }
+    .btn-close::before,
+    .btn-close::after {
+        background-color: #ce9393;
+    }
+    .btn-close:active::before,
+    .btn-close:active::after {
+        background-color: #ff0000;
+    }
+    /*-----*/
+    /*-----инструкция бронирования---*/
+    .manual_wrapper {
+        margin: 2vmin 0 5vmin;
+        padding: 0 1.5vmin;
+        width: 100%;
+    }
+    .manual {
+        box-sizing: border-box;
+        width: 16vmin;
+        padding: 4vmin 0.5vmin !important;
+        font-size: 3.3vmin;
+        transform: rotateY(90deg);
+    }
+    .manual img {
+        width: 7vmin;
+        height: 60%;
+        margin-bottom: 0.5vmin !important;
+    }
+    .manual p {
+        display: block;
+        height: 80%;
+        text-align: center;
+    }
+    /*-----forma--1---*/
+    .section_form_1,
+    .section_form_2 {
+        padding: 10vmin 0 0;
+    }
+    .section_form_wrapper_1 {
+        width: 95vmin;
+        padding: 10vmin 4vmin;
+        margin: auto;
+        margin-bottom: 10vmin;
+    }
+    .section_form_1 h2,
+    .section_form_2 h2 {
+        font-weight: 900;
+        font-size: 7vmin;
+    }
+    .form_order_1 {
+        margin: 2vmin auto 0;
+        padding-top: 3%;
+        width: 72%;
+        height: max-content;
+    }
+    .input_order {
+        width: 90%;
+        margin: 0 auto 3%;
+        padding: 1%;
+        font-size: 4vmin;
+    }
+    .btn_form_order {
+        margin: 3vmin auto 0;
+        padding: 0.5vmin 4vmin;
+        font-size: 6vmin;
+    }
+    /*---акции----*/
+    /*шарики*/
+    .ballons_1 {
+        display: none;
+    }
+    .ballons_2 {
+        display: none;
+    }
+    /*ленты*/
+    .lenta {
+        display: none;
+    }
+    /*бант*/
+    .bow_1 {
+        display: none;
+    }
+    /*--аниматор--*/
+    .animator_1_img {
+        top: -21vmin;
+        left: 7vmin;
+    }
+    .animator_1_img img {
+        max-height: 22vmin;
+    }
+    .animator_2_img {
+        top: -21vmin;
+        right: 7vmin;
+    }
+    .animator_2_img img {
+        max-height: 22vmin;
+        transform: scale(-1, 1);
+    }
+    /*--*/
+    /*---*/
+    .sale_section {
+        height: max-content;
+        justify-content: center;
+        padding-top: 4vmin;
+    }
+    .sale_h2 {
+        padding-bottom: 2vmin;
+        padding-top: 6vmin;
+        font-size: 6vmin;
+    }
+    .sale_wrapper {
+        box-sizing: border-box;
+        display: block;
+        margin-top: 5vmin;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        justify-content: space-around;
+    }
+    /*блоки с акциями*/
+    .sale {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 70vmin;
+        padding: 2vmin 2vmin;
+        justify-content: space-around;
+    }
+    .sale_1,
+    .sale_3 {
+        margin-top: 0vh;
+    }
+    .sale_2 {
+        flex-direction: row-reverse;
+    }
+    /*картинка акции*/
+    .sale img {
+        width: 40%;
+        max-height: 60%;
+        border-radius: 20px;
+        margin: 0;
+        border: none;
+    }
+    /*текстовый блок акций*/
+    .sale_block {
+        display: grid;
+        border: none;
+        box-shadow: none;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #000000;
+        width: 55%;
+        height: 100%;
+        align-content: center;
+    }
+    .sale p {
+        display: block;
+        font-size: 3vmin;
+        padding: 0 1vmin 2vmin;
+        text-align: center;
+    }
+    .sale_text {
+        font-size: 2vmin;
+        padding: 1vw 1vw !important;
+    }
+    .btn_sale {
+        display: block;
+        position: absolute;
+        bottom: 15%;
+        padding: 0.5vmin 2vmin;
+        font-size: 5vmin !important;
+        margin: 1vmin 0 0;
+    }
+    .btn_sale_1,
+    .btn_sale_3 {
+        left: 5.5vmin;
+    }
+    .btn_sale_2 {
+        right: 5.5vmin;
+    }
+    /*------*/
+    /*--галерея-----слайдер----*/
+    .gallery h2 {
+        position: relative;
+        z-index: 2;
+        padding: 4vmin 0 5vmin;
+        font-size: 7vmin;
+    }
+    /*шары*/
+    .ballons_3 {
+        display: none;
+    }
+    /**/
+    .gallery-container {
+        height: 60vmin;
+    }
+    .slide {
+        height: 54vmin;
+    }
+    .gallery-button-back {
+        left: 3vmin;
+        top: 23vmin;
+    }
+    .gallery-button-next {
+        right: 3vmin;
+        top: 23vmin;
+    }
+    .gallery-button:hover,
+    .gallery-button:focus,
+    .gallery-button:active {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    /*---увеличение картинок---*/
+    .modal-photo .img-big {
+        height: 55vmin;
+        width: 95vmin;
+        margin: 0;
+    }
+    .modal {
+        position: fixed;
+        color: #000000;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.8);
+        box-shadow: 0 30px 50px rgba(0, 0, 0, 0.8);
+    }
+    .modal-photo {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .modal-show {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: bounce;
+        animation-duration: 0.6s;
+    }
+    .modal-close {
+        position: absolute;
+        top: 55vmin;
+        right: 6vmin;
+        width: 22px;
+        height: 22px;
+        font-size: 0;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    /*кнопа закрытия окна увеличения фото*/
+    .modal-close::before,
+    .modal-close::after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 1vmin;
+        width: 35px;
+        height: 4px;
+        background-color: #d0d0d0;
+    }
+    .modal-close:hover::before,
+    .modal-close:hover::after {
+        background-color: #ff0000;
+    }
+    .modal-close::before {
+        transform: rotate(45deg);
+    }
+    .modal-close::after {
+        transform: rotate(-45deg);
+    }
+    /*--------*/
+    /*---Бегущая строка---*/
+    .wrapper_string h2 {
+        padding: 0 0 5vmin;
+        font-size: 7vmin;
+    }
+    .string {
+        width: 100%;
+        margin-bottom: 8vmin;
+        height: 15vmin;
+    }
+    .string img {
+        width: 15.5%;
+        height: 10vmin;
+        margin: 2.5vmin 2.2%;
+    }
+    /*-----*/
+    /*---форма 2 ----*/
+    .section_form_2 {
+        padding: 14vmin 0 10vmin !important;
+    }
+    .section_form_wrapper_2 {
+        box-sizing: border-box;
+        width: 90vmin !important;
+        height: 65vmin !important;
+        margin-top: 0vh;
+        padding: 12vmin 0 8vmin !important;
+    }
+    .section_form_wrapper_2 h2 {
+        width: 100%;
+        height: max-content;
+    }
+    .form_order_2 {
+        margin: 3vmin auto;
+        padding-top: 0vmin;
+        width: 80%;
+        height: 10vmin;
+    }
+    .form_order_2 .input_order {
+        margin: 1vmin auto;
+    }
+}
+
+@media (max-width: 300px) {
+    .reviews_open {
+        top: 13vh;
+        height: 85vh;
+    }
+    .btn-close {
+        top: 3vh;
+    }
+}
+
+
+/*-------MOBILE----высота окна-------*/
+
+@media (max-height: 300px) {
+    /*-----блок слайдер и бренд---------*/
+    .bg_info_company {
+        height: 150vmin;
+    }
+    .slider_info_company {
+        height: 150vmin;
+    }
+    .logo_text_img {
+        top: 12vmin;
+        width: 80vmin;
+        height: 30vmin;
+    }
+    .slider_info_company p {
+        font-size: 7vmin;
+        line-height: 7.3vmin;
+    }
+    .slog_1_info_company {
+        margin-top: 50vmin !important;
+    }
+    .slog_2_info_company {
+        margin-top: 0.5vmin !important;
+    }
+    /*слайдер*/
+    .fader_wrapper {
+        height: 150vmin;
+    }
+    /*разделитель--1*/
+    .line_cut_1 {
+        height: 16vmin;
+    }
+    /*приемущества*/
+    .features-item p {
+        line-height: 6.3vmin;
+        font-size: 6vmin;
+    }
+    /*---блок о компании----*/
+    .info_company h2 {
+        font-size: 9vmin;
+    }
+    .info_company p {
+        margin-top: 3vmin;
+        line-height: 6.5vmin;
+        font-size: 6vmin;
+    }
+    .motto {
+        margin: 7vmin 0;
+        font-size: 6.8vmin !important;
+        line-height: 7.2vmin !important;
+    }
+    /*--разделитель-line-circle--*/
+    .line_circle_wrapper {
+        height: 6.3vmin;
+    }
+    .line_circle_2 {
+        width: 100%;
+        height: 12vmin;
+    }
+    /*----блок отзывы---*/
+    .reviews_section {
+        padding-top: 3vmin;
+    }
+    .reviews_h2 {
+        margin: 4vmin auto 6vmin;
+        font-size: 10vmin;
+    }
+    .reviews_wrapper {
+        flex-direction: column;
+        top: 20vmin;
+    }
+    .reviews_wrapper_relative {
+        height: 140vmin;
+    }
+    .reviews {
+        height: 40vmin;
+        margin: 0 auto 3vmin;
+        /* top: 10vmin;*/
+    }
+    .reviews img {
+        width: 25vmin;
+        height: 25vmin;
+    }
+    .reviews_name {
+        font-size: 6vmin;
+        margin-top: 1vmin;
+    }
+    .reviews_text {
+        font-size: 5vmin;
+        line-height: 5.3vmin;
+    }
+    .reviews_data {
+        font-size: 5vmin;
+        line-height: 5.3vmin;
+    }
+    .reviews_open_bg {
+        width: 99vw;
+        height: 100vh;
+    }
+    /*открываем новости*/
+    .reviews_open {
+        height: 85vmin;
+        top: 12vmin;
+        left: 3vmin;
+    }
+    .reviews_open_content {
+        width: 75vmin;
+        height: max-content;
+        padding: 0 0.5vmin;
+    }
+    .reviews_open_text {
+        height: 50vmin;
+        font-size: 6vmin;
+        line-height: 6.2vmin;
+    }
+    /*-----*/
+    /*-----forma--1---*/
+    .section_form_1,
+    .section_form_2 {
+        padding: 12vmin 0 0;
+    }
+    .section_form_wrapper_1 {
+        margin-bottom: 8vmin;
+    }
+    .section_form_1 h2,
+    .section_form_2 h2 {
+        padding: 3vmin 0 0.5vmin;
+    }
+    .form_order_1 {
+        margin: 2vmin auto 0;
+        padding-top: 3%;
+        width: 70%;
+        height: max-content;
+    }
+    .input_order {
+        width: 90%;
+        margin: 0 auto 3%;
+        padding: 1%;
+        font-size: 4vmin;
+    }
+    .btn_form_order {
+        margin: 1vmin auto 0;
+        padding: 0.5vmin 4vmin;
+        font-size: 4vmin;
+    }
+    /*блоки с акциями*/
+    .sale {
+        height: 100vmin;
+        margin-bottom: 4vmin;
+    }
+    .sale_3 {
+        margin-bottom: 0;
+    }
+    /*картинка акции*/
+    .sale img {
+        height: 70vmin !important;
+    }
+    /*текстовый блок акций*/
+    .sale p {
+        font-size: 4.7vmin;
+    }
+    .sale_text {
+        font-size: 3.7vmin;
+    }
+    .btn_sale {
+        font-size: 7vmin !important;
+        padding: 2vmin 4vmin;
+    }
+    .btn_sale_1,
+    .btn_sale_3 {
+        left: 18vmin;
+    }
+    .btn_sale_2 {
+        right: 17vmin;
+    }
+}

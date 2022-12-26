@@ -1,0 +1,301 @@
+/*------------------MOBILE-----------*/
+
+@media (max-width: 900px) {
+    * {
+        box-sizing: border-box;
+    }
+    /*-----блок слайдер и бренд---------*/
+    .slider_info_company_wrapper {
+        height: max-content;
+    }
+    .bg_info_company {
+        height: 80vmin;
+    }
+    .slider_info_company {
+        height: 80vmin;
+        top: 0vh;
+        justify-content: space-between;
+    }
+    .logo_text_img {
+        top: 5vmin;
+        width: 80vmin;
+        height: 20vmin;
+    }
+    .slider_info_company p {
+        font-size: 5vmin;
+        line-height: 5.3vmin;
+    }
+    .slog_1_info_company {
+        margin-top: 30vmin !important;
+    }
+    .slog_2_info_company {
+        margin-top: 0.5vmin !important;
+    }
+    /*слайдер*/
+    .fader_wrapper {
+        height: 80vmin;
+    }
+    /*разделитель--1*/
+    .line_cut_1 {
+        height: 8vmin;
+    }
+    /*заголовок*/
+    h1 {
+        font-size: 400%;
+    }
+    /*кнопка открытия фильтра*/
+    .open_filter_button {
+        font-size: 160%;
+    }
+    /*общая обертка формы*/
+    .filters {
+        width: 50%;
+        padding: 6vw;
+    }
+    /*кнопка формы*/
+    .filter-button {
+        font-size: 150%;
+    }
+    /**/
+    .filters_text_esc {
+        font-size: 120%;
+    }
+    /*название групп филтрации*/
+    .filters legend {
+        font-size: 230%;
+    }
+    .filter-checkbox {
+        font-size: 210%;
+        padding-left: 30%;
+        margin-bottom: 5vh;
+        padding-top: 8px;
+    }
+    /*оформление не стандартного индикатора чекбокса*/
+    .checkbox-indicator {
+        width: 30px;
+        height: 30px;
+    }
+    .filter-input:checked~.filter-checkbox .checkbox-indicator::before,
+    .filter-input:checked~.filter-checkbox .checkbox-indicator::after {
+        left: 3px;
+        top: 10px;
+    }
+    /**/
+    .location_card_in_list {
+        display: flex;
+    }
+    .location_info {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 34.5%;
+    }
+    .location_card_in_list img {
+        position: absolute;
+        width: 34%;
+        top: 10%;
+        left: 2%;
+    }
+    .location_info h2 {
+        font-size: 230%;
+    }
+    .location_info p {
+        font-size: 190%;
+    }
+    .location_info h3 {
+        font-size: 210%;
+    }
+    /*кнопки карточек*/
+    .btn_card_location {
+        position: absolute;
+        left: 6%;
+        top: 60%;
+        width: 25vw !important;
+        font-size: 150% !important;
+    }
+    .btn_card_booking {
+        top: 80%;
+    }
+    .location_info p:last-child {
+        font-size: 220%;
+        margin-bottom: 1vh;
+    }
+    /*открывающиеся карты мест*/
+    .location_card h2 {
+        font-size: 200%;
+    }
+    .location_card h3 {
+        font-size: 280%;
+        margin-bottom: 2vh;
+    }
+    .location_card p {
+        font-size: 250%;
+    }
+    .location_card img {
+        width: 85%;
+    }
+    /**/
+    /*общая карта*/
+    .map_wrapper h2 {
+        font-size: 500%;
+    }
+    .map_wrapper {
+        height: 70vh;
+    }
+    /*ставим точки на карте*/
+    .local_icon {
+        width: 8vw !important;
+        height: 8vw !important;
+    }
+    .location_1 {
+        top: 52%;
+        left: 46%;
+    }
+    .location_2 {
+        top: 42%;
+        left: 41%;
+    }
+    .location_3 {
+        top: 23%;
+        left: 80%;
+    }
+    .location_4 {
+        top: 63%;
+        left: 18%;
+    }
+    .location_5 {
+        top: 67%;
+        left: 65%;
+    }
+    .location_6 {
+        top: 23%;
+        left: 59%;
+    }
+    .location_7 {
+        top: 33%;
+        left: 24%;
+    }
+    .location_8 {
+        top: 48%;
+        left: 68%;
+    }
+    /*картинки на карте при наведении на метку*/
+    .mini_logo_location {
+        width: 20vw;
+        height: 15vw;
+        border: 2px solid black;
+    }
+    .location_mark {
+        font-size: 180%;
+        text-shadow: -0 -1px 2px #000000, 0 -1px 2px #000000, -0 1px 2px #000000, 0 1px 2px #000000, -1px -0 2px #000000, 1px -0 2px #000000, -1px 0 2px #000000, 1px 0 2px #000000, -1px -1px 2px #000000, 1px -1px 2px #000000, -1px 1px 2px #000000, 1px 1px 2px #000000, -1px -1px 2px #000000, 1px -1px 2px #000000, -1px 1px 2px #000000, 1px 1px 2px #000000;
+    }
+}
+
+
+/*--------*/
+
+@media (max-width: 500px) {
+    /*общая обертка формы*/
+    .filters {
+        width: 70%;
+        padding: 6vw;
+    }
+    /*кнопка формы*/
+    .filter-button {
+        font-size: 230%;
+    }
+    /**/
+    .filters_text_esc {
+        font-size: 280%;
+    }
+    /*название групп филтрации*/
+    .filters legend {
+        font-size: 350%;
+    }
+    .filter-checkbox {
+        font-size: 280%;
+        padding-left: 30%;
+        margin-bottom: 2vh;
+        padding-top: 8px;
+    }
+    /*оформление не стандартного индикатора чекбокса*/
+    .checkbox-indicator {
+        width: 30px;
+        height: 30px;
+    }
+    .filter-input:checked~.filter-checkbox .checkbox-indicator::before,
+    .filter-input:checked~.filter-checkbox .checkbox-indicator::after {
+        left: 3px;
+        top: 10px;
+    }
+    /**/
+    .location_info h2 {
+        font-size: 350%;
+    }
+    .location_info p {
+        font-size: 220%;
+    }
+    .location_info h3 {
+        font-size: 280%;
+    }
+    /*кнопки карточек*/
+    .btn_card_location {
+        width: 18vw;
+        font-size: 160% !important;
+    }
+    .btn_card {
+        font-size: 220%;
+    }
+    /**/
+    /*общая карта*/
+    .map_wrapper h2 {
+        font-size: 500%;
+    }
+    /*ставим точки на карте*/
+    .local_icon {
+        width: 6vw;
+        height: 6vw;
+    }
+    /*картинки на карте при наведении на метку*/
+    .mini_logo_location {
+        width: 20vw;
+        height: 15vw;
+        border: 2px solid black;
+    }
+}
+
+
+/*-------MOBILE----высота окна-------*/
+
+@media (max-height: 300px) {
+    /*-----блок слайдер и бренд---------*/
+    .bg_info_company {
+        height: 150vmin;
+    }
+    .slider_info_company {
+        height: 150vmin;
+    }
+    .logo_text_img {
+        top: 12vmin;
+        width: 80vmin;
+        height: 30vmin;
+    }
+    .slider_info_company p {
+        font-size: 7vmin;
+        line-height: 7.3vmin;
+    }
+    .slog_1_info_company {
+        margin-top: 50vmin !important;
+    }
+    .slog_2_info_company {
+        margin-top: 0.5vmin !important;
+    }
+    /*слайдер*/
+    .fader_wrapper {
+        height: 150vmin;
+    }
+    /*разделитель--1*/
+    .line_cut_1 {
+        height: 16vmin;
+    }
+}
