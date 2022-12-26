@@ -51,7 +51,7 @@ $(document).ready(function() {
             .children('p.reviews_text')
             .addClass('reviews_open_text');
     });
-    $('.btn-close').click(function() {
+    $('.reviews-btn-close').click(function() {
         $('.reviews_open_bg').css({ display: 'none' });
         $('.reviews').removeClass('reviews_open');
         $('.reviews_content').removeClass('reviews_open_content');
