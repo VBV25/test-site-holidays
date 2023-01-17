@@ -134,7 +134,7 @@
 
 /*------------------MOBILE-----------*/
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     body {
         width: 100%;
     }
@@ -144,7 +144,7 @@
         height: max-content;
         padding: 0;
         display: grid;
-        grid-template-areas: 'btn_burger logo_header user_nav_header' 'mobile_nav_head mobile_nav_head mobile_nav_head';
+        grid-template-areas: 'btn_burger logo_header user_nav_header''mobile_nav_head mobile_nav_head mobile_nav_head';
         grid-template-rows: 22vmin;
         grid-template-columns: 1.5fr 2fr 1.5fr;
         grid-column-gap: auto;
@@ -173,7 +173,7 @@
         width: 12vmin;
         height: 12vmin;
         padding: 0 0 0 0;
-        margin-right: 4vw;
+        margin-right: 6vw;
     }
     .login-link {
         display: flex;
@@ -257,7 +257,7 @@
         width: 100%;
         padding: 1vh 1vw 2vh;
         display: grid;
-        grid-template-areas: 'logo_footer_mobile logo_footer_mobile  logo_footer_mobile' 'group_footer_1 footer_menu group_footer_2 ' 'icon_footer_1 group_footer_3 icon_footer_2 ' 'contacts_footer_1 icon_footer_3 contacts_footer_2 ' 'copyright copyright copyright';
+        grid-template-areas: 'logo_footer_mobile logo_footer_mobile  logo_footer_mobile''group_footer_1 footer_menu group_footer_2 ''icon_footer_1 group_footer_3 icon_footer_2 ''contacts_footer_1 icon_footer_3 contacts_footer_2 ''copyright copyright copyright';
         grid-template-rows: 3fr 1fr * 5;
         grid-template-columns: 1fr * 3;
         grid-column-gap: 2vw;
